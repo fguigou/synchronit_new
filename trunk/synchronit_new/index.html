@@ -12,11 +12,14 @@
 	<link rel="stylesheet" href="css/headerWithSlider.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/lightbox.html" type="text/css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen" />
-    <link href="css/least.min.css" rel="stylesheet">
-    <link href="css/jquery.easy-pie-chart.css" rel="stylesheet">   
+	<link rel="stylesheet" href="css/slidedeck.skin.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/slidedeck.skin.css" type="text/css" media="screen" />
+	<link href="css/least.min.css" rel="stylesheet">
+	<link href="css/jquery.easy-pie-chart.css" rel="stylesheet">   
 	
 	<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 	
 	 <style>
 		  html, body{ margin: 0; padding: 0; height: 100%; }
@@ -31,9 +34,10 @@
 	<script type="text/javascript" src="js/easypiechart.js"></script>
 	<script type="text/javascript" src="js/canvas.js"></script>
 	<script type="text/javascript" src="js/niceScroll.js"></script>
+	<script type="text/javascript" src="js/slidedeck.jquery.lite.js"></script>
 	
 	<script src="js/jquery.lazyload.js"></script>
-    <script src="js/least.min.js"></script>
+	<script src="js/least.min.js"></script>
 	
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 	<script type="text/javascript" src="js/map.js"></script>
@@ -75,8 +79,8 @@
 					
 					<!--IMAGE SLIDE-->
 						<li class="slide fr_slide_image">
+							<div class="back_banner">
 							<div class="slide_wrap">
-								<div class="back_banner"></div>
 								<div class="featured_box">
 									<a href="#">							
 										<img src="images/slider/mntn3.png" alt='img' />
@@ -90,11 +94,12 @@
 									</div>
 								</div> <!-- end .featured_box -->
 							</div> <!-- end .slide_wrap -->
+							</div>
 						</li>
 						
 						<li class="slide fr_slide_image">
+							<div class="back_banner">
 							<div class="slide_wrap">
-								<div class="back_banner"></div>
 								<div class="featured_box">
 									<a href="#">							
 										<img src="images/slider/2.jpg" alt='img' />
@@ -107,6 +112,7 @@
 									</div>
 								</div> <!-- end .featured_box -->
 							</div> <!-- end .slide_wrap -->
+							</div>
 						</li>					
 						
 					</ul>
@@ -286,45 +292,64 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra ulla sem vitae neque. Quisque id sodales libero. </p>
 				</div>
 					<div class="team_person">
-						<img src="images/team/youmewe.jpg" alt="img" />
-						<div class="value_text_block">
-						  <h6 class="team_name">You... Me... WE</h6>
-						  <p>The first pre-requisite for a successful project, is to build up a team. And this is not a one-time process. It is a permanent activity.</p>
-						  <p>When we are talking about applied-intelligence, we need to consider each human being as a whole. Creativity can only be released to its full-potential, once the whole person can focus on the right issues. </p>
-						  <p>People build teams in order to overcome individual limitations (as Peter Drucker used to say) therefore it is important to constantly learn, collaborate, increase common knowledge and achieve an identification with team goals that makes possible to overcome individual egos</p>
-						</div>
+					      <a class="value_anchor" href="#team">
+					      <img src="images/team/youmewe.jpg" alt="youmewe" />
+					      <div class="value_text_block">
+						<h6 class="team_name">You... Me... WE</h6>
+					      </div>
+					      </a>
 					</div>
+					
 					<div class="team_person">
-						<img src="images/team/liberte.jpg" alt="img" />
+					      <a class="value_anchor" href="#team">					
+						<img src="images/team/liberte.jpg" alt="freedom" />
 						<div class="value_text_block">
 						  <h6 class="team_name">Liberté, Egalité, Fraternité</h6>
-						  <p>After more than 200 years of the French revolution that influenced so many democracies, the fundamental values that inspired it are still to be reaffirmed every day. Universal opportunity is a concept and a practice that we adhere to.</p>
-						  <p>At Synchronit, we have no managers or hierarchical positions in the traditional sense.</p>
-						  <p>We believe, each fellow to be a complete professional and entrepreneur and we help as a team, in this personal and professional quest of continuous growth.</p>
-						  <p>The reason is simple and (why not?) also selfish: the better each member is, the better it is for all. We learned that since living in caves and it is part of what makes us humans.</p>
 						</div>
+						</a>
 					</div>					
 					<div class="team_person">
-						<img src="images/team/valueCreation.jpg" alt="img" />
+					      <a class="value_anchor" href="#team">
+						<img src="images/team/valueCreation.jpg" alt="value_creation" />
 						<div class="value_text_block">
 						  <h6 class="team_name">Value Creation</h6>
-						  <p>We believe, that sharing your work with others for the creation of value means that you benefit from their work, as well as they benefit from yours.</p>
-						  <p>We believe, that sharing this value is not a mathematical equation and that "the whole is more than the sum of the parts".</p>
-						  <p>We believe, that proper value creation should enable a relaxed life for all members, whilst ensuring company's existence.</p>
-						  <p>We believe, that together with our customers the creation of value is such, that win-win situations are a natural consequence of sharing a bright future.</p>
-						  <p>We believe, that accounting permits an objective measurment of value creation</p>
 						</div>
+						</a>
 					</div>					
 					<div class="team_person">
-						<img src="images/team/transparency.gif" alt="img" />
+					  <a class="value_anchor" href="#team">	
+						<img src="images/team/transparency.gif" alt="transparency" />
 						<div class="value_text_block">
 						  <h6 class="team_name">Transparency</h6>
-						  <p>Transparency is one of the best solutions against corruption.</p>
-						  <p>And we do not mean just political or economic. We believe in value creation and fair compensation.</p>
-						  <p>This is not a romantic or utopic position. It helps and forces us to focus in the creation of real value at every single moment and not just to serve tribute to past glories.</p>
-						  <p>In practice, this means that at Synchronit there is no profit-taken nor dividends. Each person earns purely based on the contribution done to generate value. 
-						  Modern companies are starting to think in this way, like Amazon for example.</p>
 						</div>
+						</a>
+					</div>
+					<div id="values_big_text">
+					      <div id="youmewe" class="value_description value_text_block activeText">
+						      <p>The first pre-requisite for a successful project, is to build up a team. And this is not a one-time process. It is a permanent activity.</p>
+						      <p>When we are talking about applied-intelligence, we need to consider each human being as a whole. Creativity can only be released to its full-potential, once the whole person can focus on the right issues. </p>
+						      <p>People build teams in order to overcome individual limitations (as Peter Drucker used to say) therefore it is important to constantly learn, collaborate, increase common knowledge and achieve an identification with team goals that makes possible to overcome individual egos</p>
+					      </div>
+					      <div id="freedom" class="value_description value_text_block">
+							<p>After more than 200 years of the French revolution that influenced so many democracies, the fundamental values that inspired it are still to be reaffirmed every day. Universal opportunity is a concept and a practice that we adhere to.</p>
+							<p>At Synchronit, we have no managers or hierarchical positions in the traditional sense.</p>
+							<p>We believe, each fellow to be a complete professional and entrepreneur and we help as a team, in this personal and professional quest of continuous growth.</p>
+							<p>The reason is simple and (why not?) also selfish: the better each member is, the better it is for all. We learned that since living in caves and it is part of what makes us humans.</p>
+					      </div>
+					      <div id="value_creation" class="value_description value_text_block">
+							<p>We believe, that sharing your work with others for the creation of value means that you benefit from their work, as well as they benefit from yours.</p>
+							<p>We believe, that sharing this value is not a mathematical equation and that "the whole is more than the sum of the parts".</p>
+							<p>We believe, that proper value creation should enable a relaxed life for all members, whilst ensuring company's existence.</p>
+							<p>We believe, that together with our customers the creation of value is such, that win-win situations are a natural consequence of sharing a bright future.</p>
+							<p>We believe, that accounting permits an objective measurment of value creation</p>
+					      </div>
+					      <div id="transparency" class="value_description value_text_block">
+							<p>Transparency is one of the best solutions against corruption.</p>
+							<p>And we do not mean just political or economic. We believe in value creation and fair compensation.</p>
+							<p>This is not a romantic or utopic position. It helps and forces us to focus in the creation of real value at every single moment and not just to serve tribute to past glories.</p>
+							<p>In practice, this means that at Synchronit there is no profit-taken nor dividends. Each person earns purely based on the contribution done to generate value. 
+							Modern companies are starting to think in this way, like Amazon for example.</p>
+					      </div>
 					</div>
 			</div> <!-- end of .sizers -->
 		</div>

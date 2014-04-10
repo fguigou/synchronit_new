@@ -302,5 +302,30 @@
 		var elem = $(this).attr("href");
 		$('html, body').animate({ scrollTop: $(elem).offset().top }, 1000);
     });
+   
+      	// DOWN ARROW SETTINGS
+   $('.value_anchor > img').add("#fr_converse .fr_simple_btn").click(function(){
+		$('html, body').animate({ scrollTop: $('#team').offset().top }, 1000);
+    });
+   
+ 
+   
+   $('.value_anchor > img').click(function(){
+		$('#values_big_text').css('display', 'block');
+		$('#values_big_text').css('display', 'block');
+		var p = $('.value_anchor > img');
+		for (var i = 0, len = p.length; i < len; i++) {
+			    $(p[i]).css('max-width', '50%');
+			}
+		$(this).css('max-width', '100%');
+		
+		
+		var type = $(this).attr('alt');
+		$('#values_big_text').hide();
+		$('#'+type).css('display', 'block');
+		$('#values_big_text').fadeIn('slow');
+		
+		
+    });
          
 })(jQuery);

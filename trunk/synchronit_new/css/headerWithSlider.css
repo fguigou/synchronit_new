@@ -35,8 +35,13 @@
 }
 
 .back_banner {
-  height: 937px;
   background-color: rgba(73, 70, 70, 0.901961);
+  height:100%
+}
+
+.back_banner_values {
+  background-color: rgba(255, 255, 255, 0.901961);
+  padding: 120px 0 80px;
 }
 
 .fr_image_description h2 {
