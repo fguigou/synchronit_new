@@ -290,6 +290,24 @@
 		} );
 				
 	});
+	
+	//’secret’ specifies the numerical keystrokes that make up the word “...mary”
+	var secret = "19019019077658289"; 
+	var input = "";
+	var timer;
+	//The following function sets a timer that checks for user input. You can change the variation in how long the user has to input by changing the number in ‘setTimeout.’ In this case, it’s set for 500 milliseconds or ½ second.
+	$(document).keyup(function(e) {
+	   input += e.which;    
+	   clearTimeout(timer);
+	   timer = setTimeout(function() { input = ""; }, 500);
+	   check_input();
+	});
+	//Once the time is up, this function is run to see if the user’s input is the same as the secret code
+	function check_input() {
+	    if(input == secret) {
+	        $('.fixed_mary').animate({left: "0px"}, 500).delay(300).animate({left: "-300px"}, 500);
+	    }
+	};
 	 
 	// MENU SETTINGS
    $("#main-menu").find("a").add("#fr_converse .fr_simple_btn").click(function(){
@@ -332,5 +350,32 @@
 	   $(this).select();
 	});
    
+
+
+	$( ".fixed_down" ).mouseenter(function() {
+		$(this).animate({left: "20px"}, 500);
+	})
+	.mouseleave(function() {
+		$(this).animate({left: "-65px"}, 500);
+	});
+	
+	$('.country_slides a').click(function(){
+		var myLatlng = null;
+		myLatlng = new google.maps.LatLng(47.21626,8.572229);				
+		google.maps.event.trigger(mapSwiss, 'resize');
+		mapSwiss.setCenter(myLatlng);
+		
+		myLatlng = new google.maps.LatLng(48.137647,11.534657);		
+		google.maps.event.trigger(mapGer, 'resize');
+		mapGer.setCenter(myLatlng);
+		
+		myLatlng = new google.maps.LatLng(-34.906953,-56.167823);		
+		google.maps.event.trigger(mapUy, 'resize');
+		mapUy.setCenter(myLatlng);
+		
+		myLatlng = new google.maps.LatLng(43.698713,7.268892);		
+		google.maps.event.trigger(mapFra, 'resize');
+		mapFra.setCenter(myLatlng);
+	});
          
 })(jQuery);

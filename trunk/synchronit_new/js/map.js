@@ -24,7 +24,10 @@ $(window).load(function(){ // after loading the DOM
 });
 
 //Google Map	
-	var map;
+	var mapSwiss;
+	var mapGer;
+	var mapUy;
+	var mapFra;
 	 var styles = [
 			{
 			  stylers: [
@@ -52,6 +55,8 @@ $(window).load(function(){ // after loading the DOM
 		function initialize() {
 		     swissMap();
 		     germanMap();
+		     uruguayMap();
+		     franceMap();
 		}
 		
 		function swissMap() {
@@ -64,54 +69,100 @@ $(window).load(function(){ // after loading the DOM
 			{name: "Styled Map"});
 			
 			// Map Coordinates
-			var myLatlng = new google.maps.LatLng(51.385328,-2.376385);
+			var myLatlng = new google.maps.LatLng(47.21626,8.572229);
 			var mapOptions = {
 				zoom: 16,
 				center: myLatlng,
 				scrollwheel: false,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
-			map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			mapSwiss = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 			
 			//Marker Coordinates
 			 var marker = new google.maps.Marker({
-			  position:  new google.maps.LatLng(51.385328,-2.376385),
-			  map: map
+			  position:  new google.maps.LatLng(47.21626,8.572229),
+			  map: mapSwiss
 			});
 			
-			map.mapTypes.set('map_style', styledMap);
-			map.setMapTypeId('map_style');
+			 mapSwiss.mapTypes.set('map_style', styledMap);
+			 mapSwiss.setMapTypeId('map_style');
+
 		}
 		
+	
+		
 		function germanMap() {
-		 // Create an array of styles.
-		 
-
-		  // Create a new StyledMapType object, passing it the array of styles,
-		  // as well as the name to be displayed on the map type control.
 		  var styledMap = new google.maps.StyledMapType(styles,
 			{name: "Styled Map II"});
 			
 			// Map Coordinates
-			var myLatlng = new google.maps.LatLng(-34.907976,-56.167777);
+			var myLatlng = new google.maps.LatLng(48.137647,11.534657);
 			var mapOptions = {
 				zoom: 16,
 				center: myLatlng,
 				scrollwheel: false,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
-			map = new google.maps.Map(document.getElementById('map-canvas-ger'), mapOptions);
+			mapGer = new google.maps.Map(document.getElementById('map-canvas-ger'), mapOptions);
 			
 			//Marker Coordinates
 			 var marker = new google.maps.Marker({
-			  position:  new google.maps.LatLng(-34.907976,-56.167777),
-			  map: map
+			  position:  new google.maps.LatLng(48.137647,11.534657),
+			  map: mapGer
 			});
 			
-			map.mapTypes.set('map_style', styledMap);
-			map.setMapTypeId('map_style');
-			
-			
+			 mapGer.mapTypes.set('map_style', styledMap);
+			 mapGer.setMapTypeId('map_style');
+
 		}
+		
+		function uruguayMap() {
+			  var styledMap = new google.maps.StyledMapType(styles,
+				{name: "Styled Map III"});
+				
+				// Map Coordinates
+				var myLatlng = new google.maps.LatLng(-34.906953,-56.167823);
+				var mapOptions = {
+					zoom: 16,
+					center: myLatlng,
+					scrollwheel: false,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				mapUy = new google.maps.Map(document.getElementById('map-canvas-uy'), mapOptions);
+				
+				//Marker Coordinates
+				 var marker = new google.maps.Marker({
+				  position:  new google.maps.LatLng(-34.906953,-56.167823),
+				  map: mapUy
+				});
+				
+				 mapUy.mapTypes.set('map_style', styledMap);
+				 mapUy.setMapTypeId('map_style');
+				 
+			}
+		
+		function franceMap() {
+			  var styledMap = new google.maps.StyledMapType(styles,
+				{name: "Styled Map IV"});
+				
+				// Map Coordinates
+				var myLatlng = new google.maps.LatLng(43.698713,7.268892);
+				var mapOptions = {
+					zoom: 16,
+					center: myLatlng,
+					scrollwheel: false,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				mapFra = new google.maps.Map(document.getElementById('map-canvas-fra'), mapOptions);
+				
+				//Marker Coordinates
+				 var marker = new google.maps.Marker({
+				  position:  new google.maps.LatLng(43.698713,7.268892),
+				  map: mapFra
+				});
+				
+				 mapFra.mapTypes.set('map_style', styledMap);
+				 mapFra.setMapTypeId('map_style');
+			}
 		
 		google.maps.event.addDomListener(window, 'load', initialize);
