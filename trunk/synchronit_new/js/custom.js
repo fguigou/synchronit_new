@@ -351,6 +351,9 @@
    $("input[type='text']").on("click", function () {
 	   $(this).select();
 	});
+   $("textarea").on("click", function () {
+	   $(this).select();
+	});
    
 
 

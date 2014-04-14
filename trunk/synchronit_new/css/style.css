@@ -463,7 +463,7 @@ h3.section_name:after{
 }
 
 .service {
-	width: 280px;
+	width: 281px;
 	margin-right: 40px;
 	margin-bottom: 80px;
 	float:left;
@@ -717,7 +717,7 @@ h6.fucts_name{
 /*****************************************/
 
 .quote{
-	background-image: url(images/horses.jpg) !important;
+	background-image: url(images/rafiki.jpg) !important;
 	background-color: #409996;
 	text-align:center;
 	font-size: 33px;
@@ -1099,12 +1099,12 @@ h4.widget_title:after {
 #team .section_name{
 	font-size: 48px;
 	margin-bottom: 40px;
-	color: #242424;
+	color: #3e3e3e;
 }
 #team .section_description p, #fr_contact_form .section_description p {
 	margin-top: 40px;
 	margin-bottom: 60px;
-	color: #aaa;
+	color: #3e3e3e;
 	font-size: 16px;
 	line-height: 1.5;
 	text-align: center;
@@ -1124,13 +1124,13 @@ h4.widget_title:after {
 }
 .team_name{
 	font-size: 23px;
-	color: #242424;
+	color: #3e3e3e;
 	margin: 20px 0 10px;
 }
 .team_person p{
 	font-size: 18px;
 	text-transform: uppercase;
-	color: #a0a0a0;
+	color: #3e3e3e;
 }
 
 #values_big_text {
@@ -1141,7 +1141,7 @@ h4.widget_title:after {
 }
 
 #values_big_text  p{
-	color: #aaa;
+	color: #3e3e3e;
 	font-size: 16px;
 	line-height: 1.5;
 	text-align: left;
@@ -1290,7 +1290,7 @@ h4.widget_title:after {
 }
 #fr_case_left, #fr_case_right{
 	position:absolute;
-	top: 50%;
+	top: 10%;
 	width:10px;
 	height:170px;
 	margin-top: -12px;
