@@ -50,7 +50,7 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 
 .fixed_down {
 	position: fixed;
-	top: 189px;
+	bottom: 80px;
 	left: -65px;
 	height: 91px;
 	width: 100px;
@@ -58,10 +58,9 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 	opacity: 0.7;
 }
 
-.fixed_mary {
+.fixed_mary, .fixed_thumb{
 	position: fixed;
-	bottom: 165px;
-	left: -300px;
+	bottom: -165px;
 	height: 100px;
 	width: 100px;
 	z-index: 1;

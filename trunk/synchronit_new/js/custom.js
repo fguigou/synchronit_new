@@ -305,7 +305,9 @@
 	//Once the time is up, this function is run to see if the user’s input is the same as the secret code
 	function check_input() {
 	    if(input == secret) {
-	        $('.fixed_mary').animate({left: "0px"}, 500).delay(300).animate({left: "-300px"}, 500);
+	        $('.fixed_mary').animate({bottom: "165px"}, 800).delay(300).animate({left: "87%"}, 500).delay(1800).animate({bottom: "-300px"}, 500);
+	        $('.fixed_thumb').css("left","84%").delay(1800).animate({bottom: "30px"}, 300).delay(1300).animate({bottom: "-300px"}, 500);
+
 	    }
 	};
 	 
@@ -353,7 +355,7 @@
 
 
 	$( ".fixed_down" ).mouseenter(function() {
-		$(this).animate({left: "20px"}, 500);
+		$(this).animate({left: "10px"}, 500);
 	})
 	.mouseleave(function() {
 		$(this).animate({left: "-65px"}, 500);
