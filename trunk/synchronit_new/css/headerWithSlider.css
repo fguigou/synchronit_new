@@ -3,6 +3,10 @@
 /*****************************************/
 
 #main_header{ background-image: none; }
+.flex_arrow{
+	display:hide;
+}
+
 #header_featured {
 	position:relative;
 	min-height:135px;
@@ -77,21 +81,24 @@ video{
 }
 			
 #left-arrow, #right-arrow {
-	position:absolute;
-	top: 50%;
-	width:30px;
-	height:59px;
+	position: absolute;
+	top: 45%;
+	width: 41px;
+	height: 59px;
 	text-indent: -9999px;
 	margin-top: -12px;
 }
 #left-arrow {
 	right: 150px;
-	background: url(images/prev_arrow.png) no-repeat;
+	background: url(images/prev-arrow.png) no-repeat;
 }
 #right-arrow {
 	right: 150px;
-	top: 63%;
-	background: url(images/next_arrow.png) no-repeat;
+	top: 55%;
+	background: url(images/prev-arrow.png) no-repeat;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
 }
 
 #header_featured ol.flex-control-nav{ bottom: 100px; }
