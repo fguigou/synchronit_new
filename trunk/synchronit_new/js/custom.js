@@ -176,13 +176,14 @@
 				});
 			 });
 		});
+			
 	//}
 	
 		$('.home #main_header').css('height', $(window).height() );
 		
 		function OffScroll () {
 			var winScrollTop = $(window).scrollTop();
-			$(window).bind('scroll',function () {
+			$(window).bind('scroll',function (e) {
 			  $(window).scrollTop(winScrollTop);
 			});
 		}
@@ -214,7 +215,6 @@
 			parallaxScroll();
 		});
 		
-// 		/*$(window).scroll(function(){ updateArrow();});*/
 		$("#down_arrow").click(function(){ updateArrow();});
 		
 		function updateArrow() {
@@ -311,20 +311,32 @@
 	    }
 	};
 	 
+	
 	// MENU SETTINGS
-   $("#main-menu").find("a").add("#fr_converse .fr_simple_btn").click(function(){
-		var elem = $(this).attr("href");
-		$('html, body').animate({ scrollTop: $(elem).offset().top }, 1000);
-   });
+   $("#main-menu").find("a").add("#fr_converse .fr_simple_btn").click( function(){
+	   $.data(window, 'processing', true);
+	   
+	   var elem = $(this).attr("href");
+	   $('html, body').animate(
+		   {scrollTop: $(elem).offset().top}, 
+		   {duration: 1000, 
+		    complete: function(e){ 
+		    	$.data(window, 'processing', false);
+			   }
+		   }); 
+	 
+	   
+	   });
+   
    
    	// DOWN ARROW SETTINGS
-   $(".fixed_down").find("a").add("#fr_converse .fr_simple_btn").click(function(){
+   $(".fixed_down").find("a").add("#fr_converse .fr_simple_btn").click(function(e){
 		var elem = $(this).attr("href");
 		$('html, body').animate({ scrollTop: $(elem).offset().top }, 1000);
     });
    
       	// DOWN ARROW SETTINGS
-   $('.value_anchor > img').add("#fr_converse .fr_simple_btn").click(function(){
+   $('.value_anchor > img').add("#fr_converse .fr_simple_btn").click(function(e){
 		$('html, body').animate({ scrollTop: $('#team').offset().top }, 1000);
     });
    
@@ -381,6 +393,13 @@
 		myLatlng = new google.maps.LatLng(43.698713,7.268892);		
 		google.maps.event.trigger(mapFra, 'resize');
 		mapFra.setCenter(myLatlng);
+	});
+	
+	$(document).on( "mousewheel DOMMouseScroll", function(e){
+		if(!($.data(window, 'processing'))) return; 
+		// avoiding scroll while auto scroll
+	    e.preventDefault();
+	    return false;
 	});
          
 })(jQuery);

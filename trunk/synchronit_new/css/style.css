@@ -14,7 +14,7 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend { margin: 0; padding: 0; border: 0; outline: 0; font-size: 95%; vertical-align: baseline; background: transparent; }
 
-body { line-height: 1; }
+body { line-height: 1;}
 ol, ul { list-style: none; }
 blockquote, q {	quotes: none; }
 
@@ -47,6 +47,10 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
 /*****************************************/
 /************* BASIC STYLES **************/
 /*****************************************/
+
+.rafiki {
+	background-position: 0px 300px !important;
+}
 
 .fixed_down {
 	position: fixed;
