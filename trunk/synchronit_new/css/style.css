@@ -222,7 +222,7 @@ img#about-image {
 
 #logo {
 	position: absolute;
-	top: -36px;
+	top: -30px;
 	left: -500px;
 }
 #logo_wrapper{
@@ -721,7 +721,7 @@ h6.fucts_name{
 /*****************************************/
 
 .quote{
-	background-image: url(images/rafiki.jpg) !important;
+	background-image: url(images/caveHands.jpg) !important;
 	background-color: #409996;
 	text-align:center;
 	font-size: 33px;
@@ -1176,17 +1176,28 @@ h4.widget_title:after {
 #about h3{ font-size: 30px; }
 #about .bio h4{ font-size: 50px; }
 #about h4{
-	font-size: 20px;
+	font-size: 30px;
 	display: inline-block;
 }
 #about h3, #about h4{ margin-bottom: 20px; }
-#about strong{ color: #fff; }
+#about strong{ 
+	color: #fff;
+	font-size: 18px; 
+}
 #about img{
 	max-width: 100%;
 }
 
-.social h4, .fr_skills h4{ position: relative; }
-.social h4:after, .fr_skills h4:after{
+.social h4, .vision h4, .joinUs h4{ position: relative; }
+.vision h3, .joinUs h5 {
+    font-size: 20px !important;
+    color: white;
+ }
+ 
+ .vision p, .joinUs p {;
+    font-size: 15px !important;
+ }
+.social h4:after, .vision h4:after, .joinUs h4:after{
 	position: absolute;
 	content: "";
 	width: 100px;
@@ -1202,14 +1213,14 @@ h4.widget_title:after {
 .bio h4, .skills h4, .current{ color: #fff; }
 
 .bio h4, .skills h4{
-	font-size: 20px;
+	font-size: 30px;
 	margin-bottom: 40px;
 	text-transform: uppercase;
 }
 .bio p{
     font-size: 15px;
     line-height: 1.5;
-	margin-bottom: 40px;
+	margin-bottom: 12px;
 }
 
 #social-icons {
@@ -1231,11 +1242,18 @@ h4.widget_title:after {
 	-moz-transition: opacity 0.2s ease-in;
 	-webkit-transition: opacity 0.2s ease-in;
 }
-.fr_skills{
+.vision{
 	background-color: transparent;
 	border: none;
 	clear: both;
-	margin-top: 160px;
+	margin-top: 120px;
+}
+
+.joinUs{
+    background-color: transparent;
+    border: none;
+    clear: both;
+    margin-top: 120px;
 }
 
 .skills h4{ margin-bottom: 50px; }
