@@ -39,7 +39,7 @@
 		slider_settings,
 		sd_slider_autospeed,
 		slider,
-		$recent_work_thumb = $('#recent-work .thumb'),
+		$recent_work_thumb = $('#our-team .thumb'),
 		$gallery_slider = $('.post_gallery_slider');
 		
 		function is_touch_device() {
@@ -222,7 +222,7 @@
 			var team_expanded = $("#fullPreview").css("display")
 			var text = "";
 			$("#down_arrow").attr("href", "#header_featured")
-			var p = [ "#header_featured","#services","#recent-work","#team","#about","#fr_contact","#fr_contact_form"];
+			var p = [ "#header_featured","#services","#our-team","#our-values","#about","#fr_contact","#fr_contact_form"];
 			for (var i = 0, len = p.length; i < len; i++) {
 			    if($( p[i]+':onScreen').length >0)
 			    {
@@ -337,7 +337,7 @@
    
       	// DOWN ARROW SETTINGS
    $('.value_anchor > img').add("#fr_converse .fr_simple_btn").click(function(e){
-		$('html, body').animate({ scrollTop: $('#team').offset().top }, 1000);
+		$('html, body').animate({ scrollTop: $('#our-values').offset().top }, 1000);
     });
    
  

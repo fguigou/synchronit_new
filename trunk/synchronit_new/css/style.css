@@ -558,25 +558,25 @@ h6.fucts_name{
 /**************** PORTFOLIO **************/
 /*****************************************/
 
-#recent-work {background: black;
+#our-team {background: black;
 	width: 100%;
 	position: relative;
 	background-color: #fff;
 	padding: 100px 0 80px;
 }
-#recent-work h3.section_name{
+#our-team h3.section_name{
 	color: #F5F5F5;
 	text-transform: uppercase;
 	text-align: center;
 }
-#recent-work h3.section_name:after{ background-color: #F5F5F5; }
-#recent-work .thumb{
+#our-team h3.section_name:after{ background-color: #F5F5F5; }
+#our-team .thumb{
 	float:left;
 	line-height:0;
 	position: relative;
 }
-#recent-work .thumb .portfolio_overlay{ display: block; }
-#recent-work .last { margin-right:0; }
+#our-team .thumb .portfolio_overlay{ display: block; }
+#our-team .last { margin-right:0; }
 #about h3 span{ padding-left: 10px; }
 
 
@@ -1093,19 +1093,19 @@ h4.widget_title:after {
 /****************** TEAM *****************/
 /*****************************************/
 
-#team{
+#our-values{
 	background-color: white;
 	padding: 100px 0px;
 }
 #team_wrap{
 	margin-top: -70px;
 }
-#team .section_name{
+#our-values .section_name{
 	font-size: 48px;
 	margin-bottom: 40px;
 	color: #3e3e3e;
 }
-#team .section_description p, #fr_contact_form .section_description p {
+#our-values .section_description p, #fr_contact_form .section_description p {
 	margin-top: 40px;
 	margin-bottom: 60px;
 	color: #3e3e3e;
@@ -1165,7 +1165,7 @@ h4.widget_title:after {
 
 #about{
 	background-color: #fff;
-	background-image: url("images/about3.jpg");
+	background-image: url("images/about.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -1476,7 +1476,7 @@ p#copyright a { color:#888; }
 	position: relative;
 	line-height: 1.5;
 	padding: 100px 0 80px;
-	background-image: url("images/contact_bg.jpg");
+	background-image: url("images/contact_big.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	color: #f5f5f5;
@@ -1669,8 +1669,8 @@ textarea.input {
 		margin-right: 40px;
 	}
 	
-	#recent-work{ padding: 50px 0 0; }
-	#recent-work #fullPreview{ padding: 50px 0 30px 20px; }
+	#our-team{ padding: 50px 0 0; }
+	#our-team #fullPreview{ padding: 50px 0 30px 20px; }
 	
 	#fr_contact_form .one_half { width: 45%; }
 	#fr_contact_form textarea.input{ width: 350px; }
@@ -1701,12 +1701,12 @@ textarea.input {
 	
 	#about{ padding: 100px 40px; }
 	
-	#recent-work #fullPreview img{ width: 39% !important; }
-	#recent-work #fullPreview .fullCaption{
+	#our-team #fullPreview img{ width: 39% !important; }
+	#our-team #fullPreview .fullCaption{
 		width: 32% !important; 
 		padding: 50px 0 30px 20px;
 	}
-	#recent-work #fullPreview figure{ right: 230px !important; }
+	#our-team #fullPreview figure{ right: 230px !important; }
 	
 	#fr_to_top{ right: 10px; }
 	
@@ -1767,7 +1767,7 @@ textarea.input {
 	
 	#about{ padding:70px 50px 120px; }
 	
-	#recent-work {
+	#our-team {
 		width: auto;
 		padding-right: 0;
 	}
@@ -1815,7 +1815,7 @@ textarea.input {
 		width: 100%;
 	}
 	
-	#team .team_person:nth-child(even){ padding-left: 21%; }
+	#our-values .team_person:nth-child(even){ padding-left: 21%; }
 	
 	.fr_slide_iphone .app_screen, .fr_slide_ipad .app_screen{
 		float: none;
@@ -1832,16 +1832,16 @@ textarea.input {
 	
 	.quote{ height: auto; }
 	
-	#recent-work #fullPreview{
+	#our-team #fullPreview{
 		width: 90% !important;
 		padding: 50px 0 30px 3px !important;
 	}
-	#recent-work #fullPreview img{
+	#our-team #fullPreview img{
 		width: 100% !important;
 		float: none !important;
 	}
-	#recent-work #fullPreview figure { right: 0 !important; }
-	#recent-work #fullPreview .fullCaption{
+	#our-team #fullPreview figure { right: 0 !important; }
+	#our-team #fullPreview .fullCaption{
 		width: 90% !important;
 		margin: 0 !important;
 	}
@@ -1903,13 +1903,13 @@ textarea.input {
 		width: 90% !important;
 	}
 	
-	#team .team_person{
+	#our-values .team_person{
 		float: none;
 		width: 160px;
 		padding: 0 !important;
 		margin: 0 auto;
 	}
-	#team .section_description p, #fr_contact_form .section_description p{ padding: 0 4%; }
+	#our-values .section_description p, #fr_contact_form .section_description p{ padding: 0 4%; }
 	
 	.fixed_block{ height: 850px; }
 	.fixed_block .four.columns{
