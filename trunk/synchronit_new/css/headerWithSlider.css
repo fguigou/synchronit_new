@@ -82,19 +82,21 @@ video{
 			
 #left-arrow, #right-arrow {
 	position: absolute;
-	top: 45%;
 	width: 41px;
 	height: 59px;
 	text-indent: -9999px;
 	margin-top: -12px;
+	top: 20%;
+	opacity: 0.3;
 }
 #left-arrow {
-	right: 150px;
+	top:  65%;
+	right: 5%;
 	background: url(images/prev-arrow.png) no-repeat;
 }
 #right-arrow {
-	right: 150px;
-	top: 55%;
+	top:  65%;
+	left: 5%;
 	background: url(images/prev-arrow.png) no-repeat;
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);

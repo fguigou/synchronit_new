@@ -287,11 +287,18 @@ img#about-image {
 #menu {
 	font-size: 20px;
 	margin-top: 30px;
-	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+#	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 	font-family:  "Muli", "Lato", "Helvetica Neue",Helvetica,Arial,sans-serif;
 	float: right;
 	width: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9b9b9b+0,3d3d3d+100&1+0,0+98 */
+	background: -moz-linear-gradient(top,  rgba(155,155,155,1) 0%, rgba(63,63,63,0) 98%, rgba(61,61,61,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(155,155,155,1) 0%,rgba(63,63,63,0) 98%,rgba(61,61,61,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(155,155,155,1) 0%,rgba(63,63,63,0) 98%,rgba(61,61,61,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9b9b', endColorstr='#003d3d3d',GradientType=0 ); /* IE6-9 */
+	color: white;
 }
+
 #menu #main-menu {
 	height: 60px;
 	width: 960px;

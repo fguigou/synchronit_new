@@ -56,13 +56,13 @@
 					<nav id="main-menu">
 						<a href="#main_header"><img src="images/logo.png" id="logo" alt="logo" /></a> <!-- Small logo in menu -->
 						<ul id="menu-main_menu" class="nav">
-							<li><a href="#main_header">Home</a></li>
-							<li><a href="#services">What do we do?</a></li>
-							<li><a href="#our-team">Our Team</a></li>
-							<li><a href="#our-values">Our Values</a></li>
-							<li><a href="#about">About Us</a></li>
-							<li><a href="#fr_contact">Where are we?</a></li>
-							<li><a href="#fr_contact_form">Contact</a></li>
+							<li><a href="#main_header"><font color="white">Home</font></a></li>
+							<li><a href="#services"><font color="white">What do we do?</font></a></li>
+							<li><a href="#our-team"><font color="white">Our Team</font></a></li>
+							<li><a href="#our-values"><font color="white">Our Values</font></a></li>
+							<li><a href="#about"><font color="white">About Us</font></a></li>
+							<li><a href="#fr_contact"><font color="white">Where are we?</font></a></li>
+							<li><a href="#fr_contact_form"><font color="white">Contact</font></a></li>
 						</ul>	
 					</nav>
 				</div> <!-- end #menu -->
@@ -125,8 +125,16 @@
 						
 					</ul>
 
-					<a id="left-arrow" class="flex-prev flex_arrow" href="#">Previous</a>
-					<a id="right-arrow" class="flex_arrow" href="#">Next</a>
+					<a id="left-arrow" class="flex-prev flex_arrow" href="#" 
+						onmouseover="$( '#left-arrow' ).animate({ opacity: 0.75 }, 100)"
+						onmouseout="$( '#left-arrow' ).animate({ opacity: 0.25 }, 1000)">
+						Previous
+					</a>
+					<a id="right-arrow" class="flex_arrow" href="#"
+						onmouseover="$( '#right-arrow' ).animate({ opacity: 0.75 }, 100)"
+						onmouseout="$( '#right-arrow' ).animate({ opacity: 0.25 }, 1000)">
+						Next
+					</a>
 				</div>	<!-- end #header_featured -->
 				<!--SLIDER-->
 			
@@ -141,7 +149,7 @@
 					<div class="service first">
 						<img class="icon aligncenter" src="images/service_img/navigate.png" alt="page icon">
 						<h3>IT Consulting</h3>
-						<p>Through the latests IT technologies and methodologies, together we can achieve success </p>
+						<p>Through the latests IT methodologies and technologies, together we help you on the road to success </p>
 					</div> <!-- end .service -->
 					<div class="service">
 						<img class="icon aligncenter" src="images/service_img/code.png" alt="page icon">
@@ -161,7 +169,7 @@
 					<div class="service">
 						<img class="icon aligncenter" src="images/service_img/5.png" alt="page icon">
 						<h3>Support & Outsourcing</h3>
-						<p>We have that "missing piece" in your team, you just need to ask for it!</p>
+						<p>Since 2004 we learned how to balance onshore and offshore efforts.<br/>Do you want a team offshore, working as smoothly as if it were onshore? Drop us a line.</p>
 					</div> <!-- end .service -->
 					<div class="service last">
 						<img class="icon aligncenter" src="images/service_img/growth.png" alt="page icon">
