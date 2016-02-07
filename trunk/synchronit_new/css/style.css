@@ -222,8 +222,10 @@ img#about-image {
 
 #logo {
 	position: absolute;
-	top: -30px;
-	left: -500px;
+	float: left;
+	top: -10px;
+	width: 20%;
+	opacity: 0.5;
 }
 #logo_wrapper{
 	padding-top: 20%;
