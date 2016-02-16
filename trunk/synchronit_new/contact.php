@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*set_include_path('/var/www/mail');*/
 require 'mail/PHPMailerAutoload.php';
 

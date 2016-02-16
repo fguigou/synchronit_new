@@ -28,6 +28,7 @@ $(window).load(function(){ // after loading the DOM
 	var mapGer;
 	var mapUy;
 	var mapFra;
+	var mapSpa;
 	 var styles = [
 			{
 			  stylers: [
@@ -57,6 +58,7 @@ $(window).load(function(){ // after loading the DOM
 		     germanMap();
 		     uruguayMap();
 		     franceMap();
+		     spainMap();
 		}
 		
 		function swissMap() {
@@ -165,4 +167,29 @@ $(window).load(function(){ // after loading the DOM
 				 mapFra.setMapTypeId('map_style');
 			}
 		
+		function spainMap() {
+			  var styledMap = new google.maps.StyledMapType(styles,
+				{name: "Styled Map V"});
+				
+				// Map Coordinates
+				var myLatlng = new google.maps.LatLng(43.355742, -8.255784);
+				var mapOptions = {
+					zoom: 16,
+					center: myLatlng,
+					scrollwheel: false,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				mapSpa = new google.maps.Map(document.getElementById('map-canvas-spa'), mapOptions);
+				
+				//Marker Coordinates
+				 var marker = new google.maps.Marker({
+				  position:  new google.maps.LatLng(43.355742, -8.255784),
+				  map: mapSpa
+				});
+				
+				 mapSpa.mapTypes.set('map_style', styledMap);
+				 mapSpa.setMapTypeId('map_style');
+			}
+			
 		google.maps.event.addDomListener(window, 'load', initialize);
+		google.maps.event.addDomListener(window, 'resize', initialize);

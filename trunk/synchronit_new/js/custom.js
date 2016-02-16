@@ -1,3 +1,4 @@
+
 (function($){
 
 		jQuery.preloadImages = function () {
@@ -39,17 +40,17 @@
 		slider_settings,
 		sd_slider_autospeed,
 		slider,
-		$recent_work_thumb = $('#our-team .thumb'),
+		$recent_work_thumb = $('#recent-work .thumb'),
 		$gallery_slider = $('.post_gallery_slider');
-		
+
 		function is_touch_device() {
-		  return !!('ontouchstart' in window) // works on most browsers 
+		  return !!('ontouchstart' in window) // works on most browsers
 			  || !!('onmsgesturechange' in window); // works on ie10
 		};
 		var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod|Macintosh)/g) ? true : false );
-		
+
 		if( $(window).width() > 680 && !is_touch_device() && !iOS){
-			$("html").niceScroll({
+		/*	$("html").niceScroll({
 				zindex: 9999,
 				cursoropacitymin: 0.3,
 				cursorwidth: 7,
@@ -57,37 +58,39 @@
 				mousescrollstep: 40,
 				scrollspeed: 100,
 				horizrailenabled: false
-			});
+			});*/
 		}
-		
+
 	// TO TOP BUTTON
 	$('#fr_to_top').click(function(){
 		$('html, body').animate({scrollTop:0}, 'slow');
 	});
-	
-	$main_menu.superfish({ 
-			delay:       300,                            // one second delay on mouseout 
-			animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation 
-			speed:       'fast',                          // faster animation speed 
-			autoArrows:  true,                           // disable generation of arrow mark-up 
-			dropShadows: false                            // disable drop shadows 
+
+	/*
+	$main_menu.superfish({
+			delay:       300,                            // one second delay on mouseout
+			animation:   {opacity:'show',height:'show'},  // fade-in and slide-down animation
+			speed:       'fast',                          // faster animation speed
+			autoArrows:  true,                           // disable generation oission to deliver the best possible VR experience, we’re looking for insight into the hardware developers are using with DK1 and DK2.  Your answers to this short survey will help us improve the Rift and the Oculus SDK.
+ 			dropShadows: false                            // disable drop shadows
 		});
-		
+	*/
+
 		$main_menu.find('>li').hover( function(){
 			$(this).addClass( 'fr_hover' );
 			$(this).find(".sub-menu").slideDown();
 		}, function(){
 			$(this).removeClass( 'fr_hover' );
 		});
-		
-		
+
+
 		$('.js #main-menu').show();
-	
+
 	//MOBILE MENU
 		$main_menu.clone().attr('id','mobile_menu').removeClass().appendTo( $mobile_nav_button );
 		$cloned_nav = $mobile_nav_button.find('> ul');
 		$cloned_nav.find('span.menu_slide').remove().end().find('span.main_text').removeClass();
-		
+
 		$mobile_nav_button.click( function(){
 			if ( $(this).hasClass('closed') ){
 				$(this).removeClass( 'closed' ).addClass( 'opened' );
@@ -98,21 +101,21 @@
 			}
 			return false;
 		} );
-		
+
 		$mobile_nav_button.find('a').click( function(event){
 			event.stopPropagation();
 		} );
-		
+
 		$('#mobile_menu li').hover(function(){
 			$(this).find('.sub-menu').slideDown( 500 ).css({display: 'block', visibility: 'visible'});
 		}, function () {
 			$(this).find('.sub-menu').slideUp( 500 );
 		});
 		//MOBILE MENU
-	
+
 	// POST FORMAT GALLERY
 	$gallery_slider.flexslider({
-		slideshow: true,           
+		slideshow: true,
 		slideshowSpeed: 7000,
 		controlsContainer: ".slider_controls"
 	});
@@ -163,7 +166,7 @@
 			onComplete: null,  // callback method for when the element finishes updating
 		};
 	})(jQuery);
-	
+
 		//if( $('body').is('#about')){
 			$('.home .fucts_counter').appear(function() {
 				$('.fucts_counter').each(function(){
@@ -176,18 +179,18 @@
 				});
 			 });
 		});
-			
+
 	//}
-	
+
 		$('.home #main_header').css('height', $(window).height() );
-		
+
 		function OffScroll () {
 			var winScrollTop = $(window).scrollTop();
 			$(window).bind('scroll',function (e) {
 			  $(window).scrollTop(winScrollTop);
 			});
 		}
-		
+
 		/*var chld = $('.servise_items').children();
 		for(var i=1; i>$('.servise_items').children();i++){
 			$chld[i].find('span').html('0'+i);
@@ -196,16 +199,16 @@
 			i++;
 			$(this).find('span').html('0'+i+'/ ');
 		});
-	
-		
-		
+
+
+
 		$recent_work_thumb.hover( function(){
 			$(this).stop(true,true).animate( { 'opacity' : '.5' }, recent_work_opacity_speed );
 		}, function(){
 			$(this).stop(true,true).animate( { 'opacity' : '1' }, recent_work_opacity_speed );
 		} );
-		
-		// HEADER PARALLAX SCROLL	
+
+		// HEADER PARALLAX SCROLL
 		function parallaxScroll(){
 			var scrolled = $(window).scrollTop();
 			$("#main_header").css({backgroundPosition: "0 "+(95+(scrolled*.4))+"%" });
@@ -214,28 +217,28 @@
 		$(window).bind('scroll',function(e){
 			parallaxScroll();
 		});
-		
+
 		$("#down_arrow").click(function(){ updateArrow();});
-		
+
 		function updateArrow() {
 			var scroll_position = $(document).scrollTop();
 			var team_expanded = $("#fullPreview").css("display")
 			var text = "";
 			$("#down_arrow").attr("href", "#header_featured")
-			var p = [ "#header_featured","#services","#our-team","#our-values","#about","#fr_contact","#fr_contact_form"];
+			var p = [ "#header_featured","#services","#recent-work","#team","#about","#fr_contact","#fr_contact_form"];
 			for (var i = 0, len = p.length; i < len; i++) {
 			    if($( p[i]+':onScreen').length >0)
 			    {
 			      text = p[i+1];
 			      i = i+1000;
-			    }   
+			    }
 			}
 			$("#down_arrow").attr("href", text);
-			 
+
 		}
-		
+
 		// SHOWCASE SLIDER SETTINGS
-		
+
 		if ( $featured.length ){
 			slider_settings = {
 				slideshow: false, 			// set true for autoplay
@@ -243,16 +246,16 @@
 				before: function(slider){
 					var $this_control = $featured_control_item.eq(slider.animatingTo),
 						width_to = '239px';
-						
+
 					if ( container_width === 748 ) {width_to = '186px';}
-					
+
 					if ( $('#featured_controls').length ){
 						$('#featured_controls li').removeClass().eq(slider.animatingTo).addClass('active-slide');
 						return;
 					}
-					
+
 					$featured_control_item.removeClass('active-slide');
-					
+
 					if ( ! $this_control.find('.animated_bar').length ){ $this_control.append('<div class="animated_bar"></div>'); }
 					$this_control.find('.animated_bar').css({ 'display' : 'block', 'width' : '7px', 'left' : '120px'}).stop(true,true).animate( { width : width_to, 'left' : 0 }, featured_bar_animation_speed, featured_bar_animation_easing, function(){
 						$this_control.find('.animated_bar').hide()
@@ -263,41 +266,41 @@
 				start: function(slider) {
 					slider = slider;
 				}
-			};			
+			};
 			slider_settings.pauseOnHover = true;
-			
+
 			$featured.flexslider( slider_settings );
 		}
-		
+
 		// SHOWCASE SLIDER SETTINGS
-		
-		
-		
-		
-	
+
+
+
+
+
 	$(window).load( function(){
 		var $flexnav = $('#fr_showcase_slider .flex-direction-nav'),
 			$flexcontrol = $('#fr_showcase_slider .flex-control-nav');
-		
+
 		$("#fr_showcase_slider").find('#fr_case_left').click( function(){
 			$flexnav.find('a.prev').trigger('click');
 			return false;
 		} );
-		
+
 		$("#fr_showcase_slider").find('#fr_case_right').click( function(){
 			$flexnav.find('a.next').trigger('click');
 			return false;
 		} );
-				
+
 	});
-	
+
 	//’secret’ specifies the numerical keystrokes that make up the word “...mary”
-	var secret = "19019019077658289"; 
+	var secret = "19019019077658289";
 	var input = "";
 	var timer;
 	//The following function sets a timer that checks for user input. You can change the variation in how long the user has to input by changing the number in ‘setTimeout.’ In this case, it’s set for 500 milliseconds or ½ second.
 	$(document).keyup(function(e) {
-	   input += e.which;    
+	   input += e.which;
 	   clearTimeout(timer);
 	   timer = setTimeout(function() { input = ""; }, 500);
 	   check_input();
@@ -310,63 +313,75 @@
 
 	    }
 	};
-	 
-	
+	var $window=$(window);
+
+$window.disablescroll({
+	handleScrollbar: false
+});
+$window.disablescroll('undo');
+ var latestScrollEvt=0;
 	// MENU SETTINGS
+   /*
    $("#main-menu").find("a").add("#fr_converse .fr_simple_btn").click( function(){
 	   $.data(window, 'processing', true);
-	   
+	 		if(latestScrollEvt>0){
+				clearTimeout(latestScrollEvt);
+			}
+
+			$window.disablescroll('disable');
+
+
 	   var elem = $(this).attr("href");
-	   $('html, body').animate(
-		   {scrollTop: $(elem).offset().top}, 
-		   {duration: 1000, 
-		    complete: function(e){ 
+	   $('html, body').stop().animate(
+		   {scrollTop: $(elem).offset().top},
+		   {duration: 1000,
+		    done: function(e){
 		    	$.data(window, 'processing', false);
-			   }
-		   }); 
-	 
-	   
+			   	setTimeout(function(){
+						$window.disablescroll("undo");
+						latestScrollEvt=0
+					},300);
+				}
+		   });
+
+
 	   });
-   
-   
+*/
+
    	// DOWN ARROW SETTINGS
    $(".fixed_down").find("a").add("#fr_converse .fr_simple_btn").click(function(e){
 		var elem = $(this).attr("href");
 		$('html, body').animate({ scrollTop: $(elem).offset().top }, 1000);
     });
-   
-      	// DOWN ARROW SETTINGS
-   $('.value_anchor > img').add("#fr_converse .fr_simple_btn").click(function(e){
-		$('html, body').animate({ scrollTop: $('#our-values').offset().top }, 1000);
-    });
-   
- 
-   
-   $('.value_anchor > img').click(function(){
-		$('#values_big_text').css('display', 'block');
+
+
+
+   $('.value_anchor').mouseenter(function(){
+
 		$('#values_big_text').css('display', 'block');
 		var p = $('.value_anchor > img');
 		for (var i = 0, len = p.length; i < len; i++) {
 			    $(p[i]).css('max-width', '50%');
 			}
-		$(this).css('max-width', '100%');
-		
-		
-		var type = $(this).attr('alt');
+		$($(this).find('img')[0]).css('max-width', '100%');
+
+
+		var type = $($(this).find('img')[0]).attr('alt');
 		$('#values_big_text').hide();
+		$('.value_description').css('display', 'none');
 		$('#'+type).css('display', 'block');
 		$('#values_big_text').fadeIn('slow');
-		
-		
+
+
     });
-   
+
    $("input[type='text']").on("click", function () {
 	   $(this).select();
 	});
    $("textarea").on("click", function () {
 	   $(this).select();
 	});
-   
+
 
 
 	$( ".fixed_down" ).mouseenter(function() {
@@ -375,31 +390,25 @@
 	.mouseleave(function() {
 		$(this).animate({left: "-65px"}, 500);
 	});
-	
+
 	$('.country_slides a').click(function(){
 		var myLatlng = null;
-		myLatlng = new google.maps.LatLng(47.21626,8.572229);				
+		myLatlng = new google.maps.LatLng(47.2159772,8.5714568);
 		google.maps.event.trigger(mapSwiss, 'resize');
 		mapSwiss.setCenter(myLatlng);
-		
-		myLatlng = new google.maps.LatLng(48.137647,11.534657);		
+
+		myLatlng = new google.maps.LatLng(48.137647,11.534657);
 		google.maps.event.trigger(mapGer, 'resize');
 		mapGer.setCenter(myLatlng);
-		
-		myLatlng = new google.maps.LatLng(-34.906953,-56.167823);		
+
+		myLatlng = new google.maps.LatLng(-34.9073784,-56.198578);
 		google.maps.event.trigger(mapUy, 'resize');
 		mapUy.setCenter(myLatlng);
-		
-		myLatlng = new google.maps.LatLng(43.698713,7.268892);		
+
+		myLatlng = new google.maps.LatLng(43.698713,7.268892);
 		google.maps.event.trigger(mapFra, 'resize');
 		mapFra.setCenter(myLatlng);
 	});
-	
-	$(document).on( "mousewheel DOMMouseScroll", function(e){
-		if(!($.data(window, 'processing'))) return; 
-		// avoiding scroll while auto scroll
-	    e.preventDefault();
-	    return false;
-	});
-         
+
+
 })(jQuery);

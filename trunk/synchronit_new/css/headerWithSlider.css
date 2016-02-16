@@ -3,10 +3,6 @@
 /*****************************************/
 
 #main_header{ background-image: none; }
-.flex_arrow{
-	display:hide;
-}
-
 #header_featured {
 	position:relative;
 	min-height:135px;
@@ -54,7 +50,7 @@
 	text-shadow: 1px 1px 0 #888;
 }
 .fr_image_description h2.title a {
-	color: #fff;  
+	color: #fff;
 }
 .fr_image_description h2.title a:hover {
 	color: #fff;
@@ -64,7 +60,7 @@
 video{
 	width: 100%;
 }
-			
+
 .text_slide {
 	padding-top: 70px;
 	padding-bottom: 50px;
@@ -79,50 +75,48 @@ video{
 	font-style: normal;
 	margin-top: 30px;
 }
-			
+
 #left-arrow, #right-arrow {
-	position: absolute;
-	width: 41px;
-	height: 59px;
+	position:absolute;
+	top: 48%;
+	width:41px;
+	height:59px;
 	text-indent: -9999px;
 	margin-top: -12px;
-	top: 20%;
-	opacity: 0.3;
 }
 #left-arrow {
-	top:  65%;
-	right: 5%;
-	background: url(images/prev-arrow.png) no-repeat;
-}
-#right-arrow {
-	top:  65%;
-	left: 5%;
+	left: 50px;
 	background: url(images/prev-arrow.png) no-repeat;
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
 	-ms-transform:rotate(180deg); /* IE 9 */
 }
+#right-arrow {
+	right: 50px;
+	background: url(images/prev-arrow.png) no-repeat;
+	
+}
 
 #header_featured ol.flex-control-nav{ bottom: 100px; }
 @media only screen and ( min-width: 768px ) and ( max-width: 980px ) {
-	
+
 	#main_header { height: 900px !important; }
 	#main_header .flexslider .slides > li{
 		height: 900px !important;
 	}
-	
+
 	#left-arrow, #right-arrow{
 		top: 80%;
-		right: 50px; 
+		right: 50px;
 	}
 	#right-arrow{ top: 90%; }
 	#header_featured ol.flex-control-nav {
 		bottom: -80px;
 		right: 50px;
 	}
-	
+
 	#services{ padding: 400px 0 80px; }
-		
+
 }
 @media only screen and ( max-width: 637px ) {
 
@@ -130,14 +124,14 @@ video{
 	#main_header .flexslider .slides > li{
 		height: 900px !important;
 	}
-	
+
 	#left-arrow{ top: 80%; }
 	#right-arrow{ top: 90%; }
 	#header_featured ol.flex-control-nav {
 		bottom: -60px;
 		right: 50px;
 	}
-	
+
 	#services{ padding: 400px 0 80px; }
 
 }
@@ -150,20 +144,20 @@ video{
 
 }
 @media only screen and ( max-width: 360px ) {
-	
+
 	#main_header { height: 640px !important; }
 	#main_header .flexslider .slides > li{
 		height: 640px !important;
 	}
-	
+
 	#left-arrow{ top: 60%; }
 	#right-arrow{ top: 70%; }
 	#header_featured ol.flex-control-nav{ bottom: 0; }
-	
+
 	.fr_image_description{ top: 16%; }
 	.fr_image_description h2{ font-size: 45px; }
 	ol.flex-control-nav li{ width: auto !important; }
-	
+
 	#services{ padding: 150px 0 80px; }
 
 }

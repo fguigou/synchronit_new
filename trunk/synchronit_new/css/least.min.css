@@ -22,7 +22,7 @@ ul { list-style: none; }
 
 /* @end */
 /* @group Gallery */
-#our-team {
+#recent-work {
   min-width: 100%;
   width: 100%;
   min-height: 100%;
@@ -31,7 +31,7 @@ ul { list-style: none; }
   /* @group Fullimage */
   /* @end */
   /* @group Smallimages */ }
-  #our-team #fullPreview {
+  #recent-work #fullPreview {
 	width: 960px;
 	margin: 0 auto;
     background-color: #333;
@@ -39,15 +39,15 @@ ul { list-style: none; }
     border-bottom: 2px solid #333;
     padding: 50px 0 30px 0;
     display: none; }
-	#our-team #fullPreview img{
+	#recent-work #fullPreview img{
 		float: left;
 	}
-    #our-team #fullPreview img,
-    #our-team #fullPreview .fullCaption {
+    #recent-work #fullPreview img,
+    #recent-work #fullPreview .fullCaption {
       width: 30%;
       display: block;
  }
-	#our-team #fullPreview .fullCaption {
+	#recent-work #fullPreview .fullCaption {
 		font-size: 15px;
 		line-height: 1.5;
 		font-weight: 300;
@@ -57,7 +57,7 @@ ul { list-style: none; }
 		float: left;
 		width: 40%;
 	  }
-    #our-team #fullPreview figure {
+    #recent-work #fullPreview figure {
       background-image: url("images/close.png");
       background-size: 100%;
       width: 30px;
@@ -66,16 +66,16 @@ ul { list-style: none; }
       top: 10px;
       right: 20px;
       cursor: pointer; }
-  #our-team li {
+  #recent-work li {
     display: inline-block;
     vertical-align: top;
     position: relative;
-	
+
     /* @group Over */
     /* @group Description */
     /* @end *
     /* @end */ }
-    #our-team li:hover .overLayer {
+    #recent-work li:hover .overLayer {
       -webkit-transition: opacity 0.3s linear;
       -moz-transition: opacity 0.3s linear;
       -ms-transition: opacity 0.3s linear;
@@ -84,7 +84,7 @@ ul { list-style: none; }
       opacity: 0.6;
       display: block;
       background: gray; }
-    #our-team li:hover .infoLayer {
+    #recent-work li:hover .infoLayer {
       -webkit-transition: opacity 0.3s linear;
       -moz-transition: opacity 0.3s linear;
       -ms-transition: opacity 0.3s linear;
@@ -92,7 +92,7 @@ ul { list-style: none; }
       transition: opacity 0.3s linear;
       opacity: 1;
       display: block; }
-    #our-team li a {
+    #recent-work li a {
       display: block;
       width: 240px;
       height: 150px;
@@ -100,11 +100,11 @@ ul { list-style: none; }
       top: 10px;
       left: 0;
       z-index: 6; }
-    #our-team li img {
+    #recent-work li img {
       border: none;
       margin: 10px 10px 0 0; }
-    #our-team li .overLayer,
-    #our-team li .infoLayer {
+    #recent-work li .overLayer,
+    #recent-work li .infoLayer {
       -webkit-transition: opacity 0.3s linear;
       -moz-transition: opacity 0.3s linear;
       -ms-transition: opacity 0.3s linear;
@@ -119,32 +119,32 @@ ul { list-style: none; }
       left: 0;
       z-index: 4;
       /* @end */ }
-      #our-team li .overLayer ul,
-      #our-team li .infoLayer ul {
+      #recent-work li .overLayer ul,
+      #recent-work li .infoLayer ul {
         padding: 50px 0 0 0; }
-        #our-team li .overLayer ul li,
-        #our-team li .infoLayer ul li {
+        #recent-work li .overLayer ul li,
+        #recent-work li .infoLayer ul li {
           display: block;
           margin: 0 auto;
           width: 200px;
           padding: 0 0 5px 0; }
-          #our-team li .overLayer ul li:first-child,
-          #our-team li .infoLayer ul li:first-child {
+          #recent-work li .overLayer ul li:first-child,
+          #recent-work li .infoLayer ul li:first-child {
             border-bottom: 2px white solid; }
-          #our-team li .overLayer ul li:last-child,
-          #our-team li .infoLayer ul li:last-child {
+          #recent-work li .overLayer ul li:last-child,
+          #recent-work li .infoLayer ul li:last-child {
             padding: 5px 0 0 0;
             text-transform: lowercase;
             font-size: medium;
              }
-          #our-team li .overLayer ul li h2,
-          #our-team li .infoLayer ul li h2 {
+          #recent-work li .overLayer ul li h2,
+          #recent-work li .infoLayer ul li h2 {
             font-size: 25px;
 			color: #fff;
 			text-transform: uppercase;
 			}
-		#our-team li .infoLayer ul li{ color: #fff; }
-    #our-team li .projectInfo {
+		#recent-work li .infoLayer ul li{ color: #fff; }
+    #recent-work li .projectInfo {
       display: none; }
 
 .ul_container{

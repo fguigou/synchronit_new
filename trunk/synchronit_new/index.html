@@ -1,4 +1,4 @@
-<!DOCTYPE html>																																			
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
@@ -15,30 +15,38 @@
 	<link rel="stylesheet" href="css/slidedeck.skin.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="css/slidedeck.skin.css" type="text/css" media="screen" />
 	<link href="css/least.min.css" rel="stylesheet">
-	<link href="css/jquery.easy-pie-chart.css" rel="stylesheet">   
-	
+	<link href="css/jquery.easy-pie-chart.css" rel="stylesheet">
+
 	<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-	
+
 	 <style>
 		  html, body{ margin: 0; padding: 0; height: 100%; }
 	</style>
-	
+
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.onscreen.min.js"></script>
 	<script type="text/javascript" src="js/jQuery.appear.js"></script>
-	<script type="text/javascript" src="js/superfish.js"></script>
 	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/easypiechart.js"></script>
 	<script type="text/javascript" src="js/canvas.js"></script>
+	<!--
+	<script type="text/javascript" src="js/superfish.js"></script>
+
+	<script type="text/javascript" src="js/easypiechart.js"></script>
+
 	<script type="text/javascript" src="js/niceScroll.js"></script>
 	<script type="text/javascript" src="js/slidedeck.jquery.lite.js"></script>
-	
+
 	<script src="js/jquery.lazyload.js"></script>
+
+	-->
 	<script src="js/least.min.js"></script>
-	
+
+	<script type="text/javascript" src="js/disableScroll.js"></script>
+
+
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 	<script type="text/javascript" src="js/map.js"></script>
 
@@ -53,44 +61,45 @@
 				<!--MENU-->
 				<div id="menu" class="clearfix small_header">
 					<a href="#" id="mobile_nav" class="closed">Navigation Menu</a>
+					<a class="logoContainer" href="#main_header"><div class='logoImage'  id="logo" alt="logo" ></div></a> <!-- Small logo in menu -->
+
 					<nav id="main-menu">
-						<a href="#main_header"><img src="images/logo.png" id="logo" alt="logo" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.5"/></a> <!-- Small logo in menu -->
 						<ul id="menu-main_menu" class="nav">
-							<li><a href="#main_header"><font color="white">Home</font></a></li>
-							<li><a href="#services"><font color="white">What do we do?</font></a></li>
-							<li><a href="#our-team"><font color="white">Our Team</font></a></li>
-							<li><a href="#our-values"><font color="white">Our Values</font></a></li>
-							<li><a href="#about"><font color="white">About Us</font></a></li>
-							<li><a href="#fr_contact"><font color="white">Where are we?</font></a></li>
-							<li><a href="#fr_contact_form"><font color="white">Contact</font></a></li>
-						</ul>	
+							<li><a href="#main_header">Home</a></li>
+							<li><a href="#services">What do we do?</a></li>
+							<li><a href="#recent-work">Our Team</a></li>
+							<li><a href="#team">Our Values</a></li>
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#fr_contact">Where are we?</a></li>
+							<li><a href="#fr_contact_form">Contact</a></li>
+						</ul>
 					</nav>
 				</div> <!-- end #menu -->
 				<!--MENU-->
-				
-				
+
+
 				<!-- DownButton -->
-				<div class="fixed_down">
+				<!-- <div class="fixed_down">
 				     <a href="#" id="down_arrow"> <img src="images/downArrow.png" alt='img' /> </a>
-				</div>
-				
+				</div> -->
+
 				<div class="fixed_mary">
                      <a href="http://www.poppendieck.com/" target="_blank"> <img src="images/team/mary_poppendieck-resized.png" alt='img'/> </a>
                 </div>
                 <div class="fixed_thumb">
                      <a href="http://www.poppendieck.com/" target="_blank"> <img src="images/team/thumbsUp.png" alt='img'/> </a>
                 </div>
-                
+
 				<!--SLIDER-->
 				<div id="header_featured" class="flexslider clearfix">
 					<ul class="slides">
-					
+
 					<!--IMAGE SLIDE-->
 						<li class="slide fr_slide_image">
 							<div class="back_banner">
 							<div class="slide_wrap">
 								<div class="featured_box">
-									<a href="#">							
+									<a href="#">
 										<img src="images/slider/mntn3.png" alt='img' />
 									</a>
 									<div class="fr_image_description">
@@ -104,12 +113,12 @@
 							</div> <!-- end .slide_wrap -->
 							</div>
 						</li>
-						
+
 						<li class="slide fr_slide_image">
 							<div class="back_banner">
 							<div class="slide_wrap">
 								<div class="featured_box">
-									<a href="#">							
+									<a href="#">
 										<img src="images/slider/2.jpg" alt='img' />
 									</a>
 									<div class="fr_image_description">
@@ -121,26 +130,19 @@
 								</div> <!-- end .featured_box -->
 							</div> <!-- end .slide_wrap -->
 							</div>
-						</li>					
-						
+						</li>
+
 					</ul>
 
-					<a id="left-arrow" class="flex-prev flex_arrow" href="#" 
-						onmouseover="$( '#left-arrow' ).animate({ opacity: 0.75 }, 100)"
-						onmouseout="$( '#left-arrow' ).animate({ opacity: 0.25 }, 1000)">
-						Previous
-					</a>
-					<a id="right-arrow" class="flex_arrow" href="#"
-						onmouseover="$( '#right-arrow' ).animate({ opacity: 0.75 }, 100)"
-						onmouseout="$( '#right-arrow' ).animate({ opacity: 0.25 }, 1000)">
-						Next
-					</a>
+					<a id="left-arrow" class="flex-prev flex_arrow" href="#">Previous</a>
+					<a id="right-arrow" class="flex_arrow" href="#">Next</a>
+
 				</div>	<!-- end #header_featured -->
 				<!--SLIDER-->
-			
+
 			</header> <!-- end #main-header -->
 		<div id="content">
-		
+
 		<!--SERVICES SECTION-->
 		<div id="services" class="clearfix row">
 			<div class="sizers clearfix">
@@ -157,19 +159,20 @@
 						<p>You bring your idea we make it happen... as simple as that.</p>
 					</div> <!-- end .service -->
 					<div class="service last">
-						<img class="icon aligncenter" src="images/service_img/5.png" alt="page icon">
-						<h3>Support & Outsourcing</h3>
-						<p>Since 2004 we learned how to balance onshore and offshore efforts.<br/>Do you want a team offshore, working as smoothly as if it were onshore? Drop us a line.</p>
+						<img class="icon aligncenter" src="images/service_img/guide.png" alt="page icon">
+						<h3>Agile Coaching</h3>
+						<p>Tired of working in the 90'? our quailified team will guide you through the migration from the current situation to a lean mindset.</p>
 					</div> <!-- end .service -->
 					<div class="service first">
 						<img class="icon aligncenter" src="images/service_img/flask.png" alt="page icon">
-						<h3>Idea & Research Labs</h3>
+						<h3>Idea & Research Factory</h3>
 						<p>Feel free to reach us and ask what cool thing are we developing in our labs.</p>
 					</div> <!-- end .service -->
-					<div class="service last">
-						<img class="icon aligncenter" src="images/service_img/guide.png" alt="page icon">
-						<h3>Agile Coaching</h3>
-						<p>Tired of working in the 90'? our quailified team of trainers will guide you through your migration from your current mindset to the one you really need.</p>
+					<div class="service">
+						<img class="icon aligncenter" src="images/service_img/5.png" alt="page icon">
+						<h3>Support & Outsourcing</h3>
+						<p>Since 2004 we learned how to balance onshore and offshore efforts.<br/>Do you want a team offshore, working as smoothly as if it were onshore? Drop us a line.</p>
+				
 					</div> <!-- end .service -->
 					<div class="service last">
 						<img class="icon aligncenter" src="images/service_img/growth.png" alt="page icon">
@@ -180,7 +183,7 @@
 			</div> <!-- end of .sizers -->
 		</div> <!-- end #services -->
 		<!--SERVICES SECTION-->
-		
+
 		<section id="fr_converse" class="fr_converse_gray">
 			<div class="sizers clearfix">
 				<div class="two_third">
@@ -190,23 +193,23 @@
 				</div>
 				<div class="one_third last">
 					<!---->
-					<a class="icon aligncenter" href="#fr_contact_form"><img class="icon aligncenter" src="images/service_img/coffee.png" alt="page icon"></a> 
+					<a class="icon aligncenter" href="#fr_contact_form"><img class="icon aligncenter" src="images/service_img/coffee.png" alt="page icon"></a>
 				</div>
 			</div>
 		</section>
-		
+
 				<!--RECENT WORK SECTION-->
-		<section id="our-team" class="row">
+		<section id="recent-work" class="row">
 			<h3 class="section_name">Our Team</h3>
             <div class="ul_container">
             <ul id="gallery">
-			
+
 				<li id="fullPreview" class="clearfix" style="display: none;">
 					<img src="img/full/10.html" alt="portfolio_img" >
 					<div class="fullCaption">
                     </div><figure class="close"></figure>
 				</li><!-- end of #fullPreview -->
-				
+
 				<!-- ALVARO -->
 		          <li>
                     <a href="images/portfolio_large/alvaro.jpg"></a>
@@ -216,7 +219,7 @@
                         <ul>
                             <li>
                                 <h2>
-                                    Alvaro Castroman    
+                                    Alvaro Castroman
                                 </h2>
                             </li>
                             <li>
@@ -235,14 +238,14 @@
                 </li><!-- end li -->
 				<!-- ANA -->
 		          <li>
-                    <a href="images/portfolio_large/ana.png"></a>
-                    <img data-original="images/portfolio/ana.png" src="images/portfolio/ana.png" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <a href="images/portfolio_large/ana.jpg"></a>
+                    <img data-original="images/portfolio/ana.jpg" src="images/portfolio/ana.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
                             <li>
                                 <h2>
-                                    Ana Miraldo   
+                                    Ana Miraldo
                                 </h2>
                             </li>
                             <li>
@@ -258,7 +261,7 @@
 							Later she moved to France and joined this team to apply her abilities and her determination to software testing.
                     </p>
                 </li><!-- end li -->
-                
+
                 <!-- BRIAN -->
                 <li>
                     <a href="images/portfolio_large/brian.jpg"></a>
@@ -268,7 +271,7 @@
                         <ul>
                             <li>
                                 <h2>
-                                    Brian Tobler    
+                                    Brian Tobler
                                 </h2>
                             </li>
                             <li>
@@ -284,16 +287,16 @@
 						In the previous years I had the luck to work with a lot of different talented people in different parts of the world (USA, ASIA, Europe, Latin America, etc), this invaluable experience helped me to adquire a set of skills, from dealing with technical issues like coding, networking, and team/technical management to more natural areas like the development of interpersonal, negotiation, and mediation skills.</br></br>
 						Today, I'm lucky to face the same situation once more, working as an associated consultant for a firm in Switzerland, surrounded with a lot of amazing people, in this never-ending dance of learning, teaching and the most important thing, enjoying the ride as much as possible. </p>
 						 </li><!-- end li -->
-                             <!-- DIEGO --> 
+                             <!-- DIEGO -->
                 <li>
-                    <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/diego.jpg" src="images/portfolio/mystery.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <a href="images/portfolio_large/diego.jpg"></a>
+                    <img data-original="images/portfolio/diego.jpg" src="images/portfolio/diego.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
                             <li>
                                 <h2>
-                                    Diego San Esteban    
+                                    Diego San Esteban
                                 </h2>
                             </li>
                             <li>
@@ -308,20 +311,20 @@
                         After getting a SW Engineer degree and working in several companies Diego felt something was still missing: passion for our work…</br></br>
                         He moved to Europe and spent a few years in Spain, a few months in Dublin and almost an year in Germany looking forward to finding "something else".</br></br>
                         He finally heard about a crazy team who challenged him: "try it for a couple of months".</br></br>
-                        "The world is a village" he says... 
+                        "The world is a village" he says...
                     </p>
                 </li><!-- end li -->
-                
-                <!-- CAMILA -->	
+
+                <!-- CAMILA -->
                 <li>
-                    <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/camila.jpg" src="images/portfolio/mystery.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <a href="images/portfolio_large/camila.jpg"></a>
+                    <img data-original="images/portfolio/camila.jpg" src="images/portfolio/camila.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
                             <li>
                                 <h2>
-                                    Camila Riveron    
+                                    Camila Riveron
                                 </h2>
                             </li>
                             <li>
@@ -333,10 +336,16 @@
                     </div>
                     <p class="projectInfo">
                         <strong>"Life is.."</strong></br>
-                        Hi nice to meet you.. My name is <strong>"La Prima" </strong> Camila "La Prima" Riveron.
+												Camila began her career in 2012 building enterprise applications as many developers, until she came across Geographic Information Systems, which totally caught her eye. So working with maps led her to realize that she has a flare for user interaction.
+												<br />
+												In 2014 she started working with agile methodologies at Synchronit. So she was introduced to Scrum and Lean, becoming more adaptable to changing circumstances and also she learnt to see her job as a community where you can share not only professional experiences but also your interests and passions. She’s now part of an offshore team which is really challenging, enriching and fun.
+												<br />
+												After getting her software engineer degree in 2015 Camila moved to Washington D.C. She’s still working with these amazing people from the distance and learning new and challenging things every day.
+												<br />
+												One of her passions is living a healthy lifestyle, eating clean and training hard keeps her motivated and makes her feel more effective.
                     </p>
                 </li><!-- end li -->
-			
+
 			    <!-- FEDE BECARIA -->
                   <li>
                     <a href="images/portfolio_large/federicoB.jpg"></a>
@@ -346,7 +355,7 @@
                         <ul>
                             <li>
                                 <h2>
-                                    Federico Becaria   
+                                    Federico Becaria
                                 </h2>
                             </li>
                             <li>
@@ -363,11 +372,11 @@
 							The mentioned search did not end, and will probably never end, because he enjoys changing environments and facing new and different challenges.</br></br>
 							Federico is also a passionate reader and has found in running something much greater than just a sport, which, apart from being a healthy exercise, gave him the opportunity to meet different people and places, and to live unforgettable experiences. </p>
                 </li><!-- end li -->
-               
+
                 <!-- FERNANDO SUZACQ -->
                   <li>
-                    <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/fernandoS.jpg" src="images/portfolio/mystery.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <a href="images/portfolio_large/fernandoS.jpg"></a>
+                    <img data-original="images/portfolio/fernandoS.jpg" src="images/portfolio/fernandoS.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
@@ -384,12 +393,12 @@
                         </ul>
                     </div>
                     <p class="projectInfo">
-                        <strong> "Life is what happens while you are busy making other plans"</strong></br> <q> -John Lennon- <q></br></br> 
-                            After beginning pursuing a degree in Computer Engineering, Fernando started working in software development, in a couple of local companies. Having acquired experience on the field, achieving his degree, and wanting to tackle new challenges, he joined Synchronit.</br> 
-                            Now, he feels right at home with the team, and motivated to work hard towards any goal that the team wants to achieve. 
+                        <strong> "Life is what happens while you are busy making other plans"</strong></br> <q> -John Lennon- <q></br></br>
+                            After beginning pursuing a degree in Computer Engineering, Fernando started working in software development, in a couple of local companies. Having acquired experience on the field, achieving his degree, and wanting to tackle new challenges, he joined Synchronit.</br>
+                            Now, he feels right at home with the team, and motivated to work hard towards any goal that the team wants to achieve.
                     </p>
                 </li><!-- end li -->
-                
+
                 <!-- FERNANDO GUIGOU -->
                 <li>
                     <a href="images/portfolio_large/fernandoG.jpg"></a>
@@ -418,11 +427,11 @@
                         Some initiatives and the continuous search of the ideal place to live brought him (in different IT roles but always doing "hands-on" development), from Uruguay to Argentina, then to Germany, now to Switzerland and maybe tomorrow to Brazil …</br>
                         "Ojalá!" -he says, in spanish-.
                          </li><!-- end li -->
-                        
-                <!-- JONATAN -->  
+
+                <!-- JONATAN -->
                 <li>
                     <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/jonatan.jpg" src="images/portfolio/mystery.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <img data-original="images/portfolio/jona.jpg" src="images/portfolio/jona.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
@@ -441,20 +450,20 @@
                     <p class="projectInfo">
                         <strong>"Life is like the wind, constantly changing, with soft breezes and strong storms."</strong></br>
                             After taking the decision that would mark the rest of my life, I started my studies in SW Engineering at the "Universidad de la República" (UDELAR) of Uruguay. I am currently studying the last year of the career. <br></br>
-                            I worked at another software company for 2 years and finally I started to work with this amazing group of people at the beginning of 2012. 
+                            I worked at another software company for 2 years and finally I started to work with this amazing group of people at the beginning of 2012.
                     </p>
                 </li><!-- end li -->
-                
+
                 <!-- LEANDRO -->
                   <li>
                     <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/leandro.jpg" src="images/portfolio/mystery.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <img data-original="images/portfolio/leandro.jpg" src="images/portfolio/leandro.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
                             <li>
                                 <h2>
-                                    Leandro Leites   
+                                    Leandro Leites
                                 </h2>
                             </li>
                             <li>
@@ -465,27 +474,27 @@
                         </ul>
                     </div>
                     <p class="projectInfo">
-                        <strong>"Life is far too important, a thing ever to talk seriously about.""</strong></br> <q> -Oscar Wilde, Lady Windermere's Fan, 1892, Act I- <q></br></br> 
+                        <strong>"Life is far too important, a thing ever to talk seriously about.""</strong></br> <q> -Oscar Wilde, Lady Windermere's Fan, 1892, Act I- <q></br></br>
                         And a citation from my grandfather that I still find difficult to achive:
                         <strong>“Life is learning … if you are not learning, you are dead”</strong></br>
-						After one year and a half of SW Engineering studies, he left the career telling everyone he will not write software again in his entire life.</br></br> 
-						Four years and an Analyst in Economics diploma later, Leandro starts developing software by its own to automate process and reports in one of the biggest financial companies of Uruguay.</br></br> 
-						Later he works in two software companies to improve his software developer skills, both companies leaders in their respective industry in US, automotive and e-learning.</br></br> 
-						Today for the first time he is working in software in which he could use all his economics knowledge.</br></br> 
+						After one year and a half of SW Engineering studies, he left the career telling everyone he will not write software again in his entire life.</br></br>
+						Four years and an Analyst in Economics diploma later, Leandro starts developing software by its own to automate process and reports in one of the biggest financial companies of Uruguay.</br></br>
+						Later he works in two software companies to improve his software developer skills, both companies leaders in their respective industry in US, automotive and e-learning.</br></br>
+						Today for the first time he is working in software in which he could use all his economics knowledge.</br></br>
 						Everyone asks him about what he will do when he finally gets his Economist diploma, “write some code I guess” he always answer.
                     </p>
                 </li><!-- end li -->
-             
+
                 <!-- LUCIA -->
                   <li>
-                    <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/lucia.jpg" src="images/portfolio/mystery.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <a href="images/portfolio_large/lucia.jpg"></a>
+                    <img data-original="images/portfolio/lucia.jpg" src="images/portfolio/lucia.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
                             <li>
                                 <h2>
-                                    Lucia Marroig   
+                                    Lucia Marroig
                                 </h2>
                             </li>
                             <li>
@@ -497,28 +506,25 @@
                     </div>
                     <p class="projectInfo">
                         <strong> "Life is problems. Living is solving problems."</strong></br>
-                            Moda</br></br>
-                            Moda</br></br>
-                            Moda</br></br>
-                            Moda</br></br>
-                            Moda</br></br>
-                            Moda</br></br>
-                            Moda</br></br>
-                            Moda</br></br>
-                            Moda</br></br>
+												A great passion for technology and the desire to understand and participate actively in the application of the latest trends to solve real life problems, made up Lucia's mind to study Software Engineering.
+												<br />
+												While conducting her studies, at early stages of her career, she began to develop for a Uruguayan software company, serving daily thousands of users in over twenty countries. There, she managed to earn experience, learn new technologies and contribute with her own ideas to improve and maintain the product.
+												<br />
+												After two years, she decided to take a year off to travel around the world, visiting more than thirty countries. Which, consisted of an extremely enriching personal experience. When she returned to her native country, she joined Synchronit seeking to strengthen her capacities as a developer and dealing with challenging problems. Shortly after, she obtained her Software Engineer degree, as well as a Scrum Master certificate.
+
                     </p>
                 </li><!-- end li -->
-                
+
                 <!-- MARCOS DUTTO -->
                 <li>
-                    <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/marcosD.jpg" src="images/portfolio/mystery.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <a href="images/portfolio_large/marcos.jpg"></a>
+                    <img data-original="images/portfolio/marcosd.jpg" src="images/portfolio/marcosd.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
                             <li>
                                 <h2>
-                                    Marcos Dutto    
+                                    Marcos Dutto
                                 </h2>
                             </li>
                             <li>
@@ -531,10 +537,10 @@
                     <p class="projectInfo">
                         <strong>"Life is... simple, no need to complicate it"</strong></br>
 						After starting his studies as a Software Engineer, he joined different local companies in Uruguay. Medical care, Business Process Management, e-teaching and freelancing are parts of his recents activities.</br></br>
-						Nowadays, after getting his degree in Sofware Engineering, he started looking forward for new challenges such as the beginning of his career as a teacher in the University of the Republic and as an Asociated Consultant at Synchronit. 
+						Nowadays, after getting his degree in Sofware Engineering, he started looking forward for new challenges such as the beginning of his career as a teacher in the University of the Republic and as an Asociated Consultant at Synchronit.
                          </li><!-- end li -->
-                        
-                <!-- MARCOS PEREZ -->  
+
+                <!-- MARCOS PEREZ -->
                 <li>
                     <a href="images/portfolio_large/marcos.jpg"></a>
                     <img data-original="images/portfolio/marcos.jpg" src="images/portfolio/marcos.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
@@ -543,7 +549,7 @@
                         <ul>
                             <li>
                                 <h2>
-                                    Marcos Perez   
+                                    Marcos Perez
                                 </h2>
                             </li>
                             <li>
@@ -554,23 +560,23 @@
                         </ul>
                     </div>
                     <p class="projectInfo">
-                        <strong>Life is like a aurora borealis explosion … It’s extremely short and extremely beautiful.</strong></br></br> 
+                        <strong>Life is like a aurora borealis explosion … It’s extremely short and extremely beautiful.</strong></br></br>
 						Since the beginning I always loved to solve problems creating systems, learning, etc. Always trying to create something to make things easier or better. On high school I finally I had Internet 24x7 :) and then I started to learn about hardware and PC repair and since then I continued with programming from where I continue to explore and discover new things with every line I put in a code.</br></br>
 						I finished “ Analyst in IT” at ORT Uruguay, while starting “System Engineer” studies at the same university. Meanwhile, I made a project with a partner which involved Computer Vision and after that I realized how little we know about all that exist in the world and I started to study Machine Learning & Computer Vision in order to create programs which goes the extra mile.</br></br>
-						On the professional line I was always involved with web development creating usable web applications, with the objective of building better experiences and functionalities that actually help the users to have success.                     
+						On the professional line I was always involved with web development creating usable web applications, with the objective of building better experiences and functionalities that actually help the users to have success.
 						</p>
                 </li><!-- end li -->
-            
+
                 <!-- MARTIN -->
                   <li>
-                    <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/martin.jpg" src="images/portfolio/mystery.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <a href="images/portfolio_large/martin.JPG"></a>
+                    <img data-original="images/portfolio/martin.jpg" src="images/portfolio/martin.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
                             <li>
                                 <h2>
-                                    Martin Reyes    
+                                    Martin Reyes
                                 </h2>
                             </li>
                             <li>
@@ -584,14 +590,14 @@
                         <strong>"Life is like gambling, it's not like you'll win every game, but as long as you have a chip in your hand it's not over yet…"</strong>
                             After moving alone to another city at the age of 17, which was an enriching experience, Martin started his studies in SW Engineering at the "Universidad de la República" (UDELAR) of Uruguay.</br></br>
 							He started his career in Genexus Consulting as a SQA, and despite having a great year there, he realized that Quality Assurance was not what he really wanted to do and that he needed a change of scenery.</br></br>
-							Now, less than a year away of getting his diploma, he joined a group of extraordinary people developing Software and he thinks to have found what he was looking for. 
+							Now, less than a year away of getting his diploma, he joined a group of extraordinary people developing Software and he thinks to have found what he was looking for.
                             </p>
                 </li><!-- end li -->
-               
+
                 <!-- YASIM -->
                   <li>
-                    <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/yasim.jpg" src="images/portfolio/mystery.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <a href="images/portfolio_large/yasim.jpg"></a>
+                    <img data-original="images/portfolio/yasim.jpg" src="images/portfolio/yasim.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
                     <div class="overLayer"></div>
                     <div class="infoLayer">
                         <ul>
@@ -609,111 +615,121 @@
                     </div>
                     <p class="projectInfo">
                         <strong> "Life is ... a Disney movie"</strong></br>
-                            
+
                     </p>
                 </li><!-- end li -->
 			</ul>
 			</div>
 		</section>
 		<!--RECENT WORK SECTION-->
-		
 		<!-- Values -->
-		<div id="our-values" class="row">
-			<div class="sizers clearfix">
+<div id="team" class="row">
+			<div class="clearfix">
 				<div class="section_description">
 					<h3 class="section_name">Our Values</h3>
-					
+					<!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra ulla sem vitae neque. Quisque id sodales libero. </p>-->
 				</div>
+  				<div class="ul_container clearfix" style="
+    /* float: left; */
+    /* width: 100%; */
+    /* display: block; */
+    /* padding: 5% 0; */
+    /* margin: 0% 15%; */
+    /* align-content: center; */
+">
 					<div class="team_person">
-					      <a class="value_anchor" href="#our-values">
-					      <img src="images/team/youmewe.jpg" alt="youmewe" />
+					      <a class="value_anchor" href="#team_person">
+					      <img src="images/team/youmewe.jpg" alt="youmewe" style="max-width: 50%;">
 					      <div class="value_text_block">
 						<h6 class="team_name">You... Me... WE</h6>
 					      </div>
 					      </a>
 					</div>
-					
+
 					<div class="team_person">
-					      <a class="value_anchor" href="#our-values">					
-						<img src="images/team/liberte.jpg" alt="freedom" />
+					      <a class="value_anchor" href="#team_person">
+						<img src="images/team/liberte.jpg" alt="freedom" style="max-width: 50%;">
 						<div class="value_text_block">
 						  <h6 class="team_name">Liberté, Egalité, Fraternité</h6>
 						</div>
 						</a>
-					</div>					
+					</div>
 					<div class="team_person">
-					      <a class="value_anchor" href="#our-values">
-						<img src="images/team/valueCreation.jpg" alt="value_creation" />
+					      <a class="value_anchor" href="#team_person">
+						<img src="images/team/valueCreation.jpg" alt="value_creation" style="max-width: 50%;">
 						<div class="value_text_block">
 						  <h6 class="team_name">Value Creation</h6>
 						</div>
 						</a>
-					</div>					
+					</div>
 					<div class="team_person">
-					  <a class="value_anchor" href="#our-values">	
-						<img src="images/team/transparency.gif" alt="transparency" />
+					  <a class="value_anchor" href="#team_person">
+						<img src="images/team/transparency.gif" alt="transparency" style="max-width: 50%;">
 						<div class="value_text_block">
 						  <h6 class="team_name">Transparency</h6>
 						</div>
 						</a>
 					</div>
-					<div id="values_big_text">
-					      <div id="youmewe" class="value_description value_text_block activeText">
+              	</div>
+					<div id="values_big_text" class="ul_container" style="display: none;">
+					      <div id="youmewe" class="value_description value_text_block activeText" style="display: block;">
 						      <p>The first pre-requisite for a successful project, is to build up a team. And this is not a one-time process. It is a permanent activity.</p>
 						      <p>When we are talking about applied-intelligence, we need to consider each human being as a whole. Creativity can only be released to its full-potential, once the whole person can focus on the right issues. </p>
 						      <p>People build teams in order to overcome individual limitations (as Peter Drucker used to say) therefore it is important to constantly learn, collaborate, increase common knowledge and achieve an identification with team goals that makes possible to overcome individual egos</p>
 					      </div>
-					      <div id="freedom" class="value_description value_text_block">
+					      <div id="freedom" class="value_description value_text_block" style="display: block;">
 							<p>After more than 200 years of the French revolution that influenced so many democracies, the fundamental values that inspired it are still to be reaffirmed every day. Universal opportunity is a concept and a practice that we adhere to.</p>
 							<p>At Synchronit, we have no managers or hierarchical positions in the traditional sense.</p>
 							<p>We believe, each fellow to be a complete professional and entrepreneur and we help as a team, in this personal and professional quest of continuous growth.</p>
 							<p>The reason is simple and (why not?) also selfish: the better each member is, the better it is for all. We learned that since living in caves and it is part of what makes us humans.</p>
 					      </div>
-					      <div id="value_creation" class="value_description value_text_block">
+					      <div id="value_creation" class="value_description value_text_block" style="display: block;">
 							<p>We believe, that sharing your work with others for the creation of value means that you benefit from their work, as well as they benefit from yours.</p>
 							<p>We believe, that sharing this value is not a mathematical equation and that "the whole is more than the sum of the parts".</p>
 							<p>We believe, that proper value creation should enable a relaxed life for all members, whilst ensuring company's existence.</p>
 							<p>We believe, that together with our customers the creation of value is such, that win-win situations are a natural consequence of sharing a bright future.</p>
 							<p>We believe, that accounting permits an objective measurment of value creation</p>
 					      </div>
-					      <div id="transparency" class="value_description value_text_block">
+					      <div id="transparency" class="value_description value_text_block" style="display: block;">
 							<p>Transparency is one of the best solutions against corruption.</p>
 							<p>And we do not mean just political or economic. We believe in value creation and fair compensation.</p>
 							<p>This is not a romantic or utopic position. It helps and forces us to focus in the creation of real value at every single moment and not just to serve tribute to past glories.</p>
-							<p>In practice, this means that at Synchronit there is no profit-taken nor dividends. Each person earns purely based on the contribution done to generate value. 
+							<p>In practice, this means that at Synchronit there is no profit-taken nor dividends. Each person earns purely based on the contribution done to generate value.
 							Modern companies are starting to think in this way, like Amazon for example.</p>
 					      </div>
 					</div>
 			</div> <!-- end of .sizers -->
 		</div>
-		<!-- VALUES -->
-				
+		<!-- Values -->
+
 		<!-- ABOUT US -->
-		<div id="about" class="row" >
+<div id="about" class="row">
 			<div class="sizers clearfix">
 				<div class="one_half clearfix">
 					<section class="social">
 						<h4>Follow us</h4>
 						<div id="social-icons">
+							<!--
 							<a href="#" target="_blank"><i class="fa fa-twitter fa-5x"></i></a>
 							<a href="#" target="_blank"><i class="fa fa-facebook fa-5x"></i></a>
+							-->
 							<a href="#" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a>
 							<a href="#" target="_blank"><i class="fa fa-skype fa-5x"></i></a>
-						</div> 
+						</div>
 					</section>
-					
+
 					<section class="joinUs">
                         <h4>Join Us</h4>
-                        <p> Do you think you can make the difference,</br> then <strong><a href="#fr_contact_form"> join us</a></strong> and meet others like you </p>
+                        <p> Do you think you can make the difference,<br> then <strong><a href="#fr_contact_form"> join us</a></strong> and meet others like you </p>
                     </section>
-                    
+
 					<section class="vision">
 						<h4>Our vision</h4>
 						<p><strong> We dream</strong>, to be better. </p>
                         <p><strong> We work</strong>, to reach our dreams. </p>
                         <p><strong> We share</strong>, to keep on dreaming together. </p>
 					</section>
-					
+
 					<!--<section class="fr_skills">
 						<h4>We are good at</h4>
 						<div class="fr_skill_bars">
@@ -732,24 +748,24 @@
 						</div>
 					</section>-->
 				</div> <!-- end of .one_half -->
-				
+
 				<section class="bio one_half last">
 					<h4>About Us</h4>
-					<p>Why? Why to speak about us, when we can hear about you? we want to listen to your concerns, troubles, plans for the future, happy histories, everything!. The first step to help you is to know you!</p>
-					<p>But, if you still want to know about us...</br>
+					<p>Why? Why to speak about us, when we can hear about about you? we want to listen to your concerns, troubles, plans for the future, happy histories, everything!. The first step to help you is to know you!</p>
+					<p>But, if you still want to know about us...<br>
 					   We are small group of people who creates solutions, WE ARE NOT A SOFTWARE COMPANY, because we don't behave as one, we believe that every problem has its own context, dangers and solution, and there isn't ONE magical technology, approach, process or tool to solve it all, \
 					   thanks to this "simple" belief we can create together with you, YOUR solution. </p>
-					<p>We always strive to be excellent, this is the only way for us to continue saying "Trust in us, we can help you" without a hint of doubt.</br>
+					<p>We always strive to be excellent, this is the only way for us to continue saying "Trust in us, we can help you" without a hint of doubt.<br>
 					   We belive in commitment, and we belive in building relationships, we make your problems our problems and we won't stop until we work them out togheter with you.  </p>
 					<p>Want to know more?. Call us!, scroll down and look for us in the globe, maybe one of our offices is near by, and if it is not, you can always mail us, or call us</p>
 				</section>
-				
+
 			</div> <!-- end of .sizers -->
-		</div> <!-- end of #about -->
+		</div><!-- end of #about -->
 		<!-- ABOUT US -->
-		
-		
-		
+
+
+
 		<!-- FUN FACTS
 		<div class="fixed_block fun_fucts">
 			<div class="sizers clearfix">
@@ -784,20 +800,20 @@
 						<h6 class="fucts_name">Pizzas ordered</h6>
 					</div>
 				</div>
-			</div> 
+			</div>
 		</div>
 		-->
-		
+
 		<!--SHOWCASE
 		<div id="fr_showcase">
 			<div class="sizers clearfix">
-				
-				
-			</div> 
+
+
+			</div>
 		</div>
 		SHOWCASE-->
-		
-		
+
+
 
 		<section id="fr_converse_about" class="fr_converse_gray">
 			<div class="sizers clearfix">
@@ -808,11 +824,11 @@
 				</div>
 				<div class="one_third last">
 					<!---->
-					<a class="icon aligncenter" href="#fr_contact_form"><img class="icon aligncenter" src="images/service_img/coffee.png" alt="page icon"></a> 
+					<a class="icon aligncenter" href="#fr_contact_form"><img class="icon aligncenter" src="images/service_img/coffee.png" alt="page icon"></a>
 				</div>
 			</div>
 		</section>
-		
+
 		<!-- CONTACT US -->
 		<div id="fr_contact" class="clearfix row">
 			<div class="sizers clearfix">
@@ -830,7 +846,7 @@
 							  <div class="country_info">
 							      <div class="fr_mail">
 								      <i class="fa fa-envelope-o fa-2x"></i>
-								      <p>Email@email.com</p>
+								      <p>info@synchronit.com</p>
 							      </div>
 							      <div class="fr_addres">
 								      <i class="fa fa-map-marker fa-2x"></i>
@@ -840,6 +856,7 @@
 						      </div>
 						      <div id="contact" class="responsive clearfix">
 						      <div class="map-canvas" id="map-canvas"></div> <!-- MAP -->
+
 						  </div>
 						</li>
 						<li class="slide fr_slide_iphone">
@@ -854,7 +871,7 @@
 							  <div class="country_info">
 							      <div class="fr_mail">
 								      <i class="fa fa-envelope-o fa-2x"></i>
-								      <p>Email@email.com</p>
+								      <p>info@synchronit.com</p>
 							      </div>
 							      <div class="fr_addres">
 								      <i class="fa fa-map-marker fa-2x"></i>
@@ -873,12 +890,12 @@
 							  </div>
 							  <div class="fr_phone">
 								  <i class="fa fa-phone-square fa-3x"></i>
-								  <p>+485 2257 986 33</p>
+								  <p>+598 2904 2329</p>
 							  </div>
 							  <div class="country_info">
 							      <div class="fr_mail">
 								      <i class="fa fa-envelope-o fa-2x"></i>
-								      <p>Email@email.com</p>
+								      <p>info@synchronit.com</p>
 							      </div>
 							      <div class="fr_addres">
 								      <i class="fa fa-map-marker fa-2x"></i>
@@ -902,7 +919,7 @@
 							  <div class="country_info">
 							      <div class="fr_mail">
 								      <i class="fa fa-envelope-o fa-2x"></i>
-								      <p>Email@email.com</p>
+								      <p>info@synchronit.com</p>
 							      </div>
 							      <div class="fr_addres">
 								      <i class="fa fa-map-marker fa-2x"></i>
@@ -914,13 +931,37 @@
 						      <div id="map-canvas-fra" class="map-canvas"></div> <!-- MAP -->
 						  </div>
 						</li>
+						<li class="slide fr_slide_iphone">
+						  <div class="address_data">
+						  	   <div class="fr_phone">
+								  <p>Spain</p>
+							  </div>
+							  <div class="fr_phone">
+								  <i class="fa fa-phone-square fa-3x"></i>
+								  <p>+34 615 432 484</p>
+							  </div>
+							  <div class="country_info">
+							      <div class="fr_mail">
+								      <i class="fa fa-envelope-o fa-2x"></i>
+								      <p>info@synchronit.com</p>
+							      </div>
+							      <div class="fr_addres">
+								      <i class="fa fa-map-marker fa-2x"></i>
+								      <p>Avda Posse nº 11 - Sada - La Coruña</p>
+							      </div>
+							  </div>
+						      </div>
+						      <div id="contact" class="responsive clearfix">
+						      <div id="map-canvas-spa" class="map-canvas"></div> <!-- MAP -->
+						  </div>
+						</li>
 					</ul>
 					<a id="fr_case_left" class="flex-prev" href="#"><i class="fa fa-angle-left fa-4x"></i></a>
 					<a id="fr_case_right" class="next" href="#"><i class="fa fa-angle-right fa-4x"></i></a>
-				</div> 
+				</div>
 		</div><!-- end of .sizers -->
 		</div> <!-- end #fr_contact -->
-			
+
 		<div id="fr_contact_form" class="row">
 			<div class="sizers clearfix">
 				<div class="section_description">
@@ -929,9 +970,9 @@
 				</div> <!-- end of .section_description -->
 				<form id="ajax_contact_form" action="javascript:alert('Was send!');">
 					<div class="one_half">
-						<p class="contact_page name"><input type="text" name="name" class="required" value="Name" /></p>
-						<p class="contact_page email"><input type="text" name="from" class="last-item required" value="Email" /></p>
-						<p class="subject"><input id="subject" type="text" name="subject" class="last-item required" value="Subject" /> </p>  
+						<p class="contact_page name"><input id='contact_name' type="text" name="name" class="required" value="Name" /></p>
+						<p class="contact_page email"><input id='contact_email' type="text" name="from" class="last-item required" value="Email" /></p>
+						<p class="subject"><input id="subject" type="text" name="subject" class="last-item required" value="Subject" /> </p>
 					</div>
 					<div class="one_half last">
 						<textarea class="input" id="contact_message" name="message">Message</textarea>
@@ -941,23 +982,23 @@
 				</form>
 			</div> <!-- end of .sizers -->
 		</div>
-			
+
 
 		<!-- CONTACT US -->
-		
+
 				<!-- QUOTE -->
 		<div class="fixed_block quote rafiki">
 			<blockquote>"Think big, act small, fail fast; learn rapidly"</blockquote>
 			<p class="author">Tom & Mary Poppendieck</p>
 		</div>
 		<!-- QUOTE -->
-		
+
 		<!--FOOTER-->
 		<div id="footer">
 			<p id="copyright"><span>Synchronit &#169; 2014</span></p>
 		</div> <!-- end #footer -->
 		<!--FOOTER-->
-	
+
 		</div> <!-- end #content -->
 	</div> <!-- end #wrapper -->
 </div> <!-- end #container -->
@@ -971,8 +1012,9 @@
 			random: 0,
 		});
 	});
-	
+
 	$(function() {
+    /*
     $('.chart').easyPieChart({
 		barColor: 'rgba(255,255,255,0.8)',
 		trackColor: 'rgba(0,0,0,0.5)',
@@ -980,6 +1022,7 @@
 		lineWidth: 5,
 		size: 80
     });
+	*/
 });
     </script>
 </body>
