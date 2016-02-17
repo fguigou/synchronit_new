@@ -71,7 +71,7 @@ $(window).load(function(){ // after loading the DOM
 			{name: "Styled Map"});
 			
 			// Map Coordinates
-			var myLatlng = new google.maps.LatLng(47.21626,8.572229);
+			var myLatlng = new google.maps.LatLng(47.216012, 8.571446);
 			var mapOptions = {
 				zoom: 16,
 				center: myLatlng,
@@ -82,7 +82,7 @@ $(window).load(function(){ // after loading the DOM
 			
 			//Marker Coordinates
 			 var marker = new google.maps.Marker({
-			  position:  new google.maps.LatLng(47.21626,8.572229),
+			  position:  new google.maps.LatLng(47.216012, 8.571446),
 			  map: mapSwiss
 			});
 			
@@ -123,7 +123,7 @@ $(window).load(function(){ // after loading the DOM
 				{name: "Styled Map III"});
 				
 				// Map Coordinates
-				var myLatlng = new google.maps.LatLng(-34.906953,-56.167823);
+				var myLatlng = new google.maps.LatLng(-34.907341, -56.198928);
 				var mapOptions = {
 					zoom: 16,
 					center: myLatlng,
@@ -134,7 +134,7 @@ $(window).load(function(){ // after loading the DOM
 				
 				//Marker Coordinates
 				 var marker = new google.maps.Marker({
-				  position:  new google.maps.LatLng(-34.906953,-56.167823),
+				  position:  new google.maps.LatLng(-34.907341, -56.198928),
 				  map: mapUy
 				});
 				
