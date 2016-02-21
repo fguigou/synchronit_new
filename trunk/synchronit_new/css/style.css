@@ -226,22 +226,33 @@ img#about-image {
 }
 
 .logoContainer {
-	position: absolute;
-	top: -10px;
-	left: 0px;
+	top: -20px;
+    left: 0px;
+    float: left;
+    margin-top: -20px;
+    float:left;
 }
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 921px) {
 	.logoImage {
 		background: url('../images/logo.png');
-		width: 262px;
-		height: 88px;
+		width: 200px;
+		height: 67px;
 	}
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 985px) {
     .logoImage {
+        margin-left: 5%;
+       
+    }
+}
+@media screen and (max-width: 920px) {
+	.logoContainer{
+		margin-left:3.5%;
+	}
+	.logoImage {
         background: url('../images/logo-short.png');
-        width: 80px;
-				height: 88px;
+        width: 56px;
+		height: 67px;
     }
 }
 #logo_wrapper{
@@ -323,7 +334,7 @@ img#about-image {
 	height: 60px;
 	width: 960px;
 	margin: 0 auto;
-	position: absolute;
+	/*position: absolute;*/
     right: 15%;
 	z-index: 10;
 }
