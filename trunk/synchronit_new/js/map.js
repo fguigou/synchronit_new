@@ -25,11 +25,8 @@ $(window).load(function(){ // after loading the DOM
 
 //Google Map	
 	var mapSwiss;
-	var mapGer;
 	var mapUy;
-	var mapFra;
-	var mapSpa;
-	 var styles = [
+	var styles = [
 			{
 			  stylers: [
 				{ hue: "#533f1b" },
@@ -55,10 +52,8 @@ $(window).load(function(){ // after loading the DOM
 		  
 		function initialize() {
 		     swissMap();
-		     germanMap();
 		     uruguayMap();
-		     franceMap();
-		     spainMap();
+		     
 		}
 		
 		function swissMap() {
@@ -93,30 +88,7 @@ $(window).load(function(){ // after loading the DOM
 		
 	
 		
-		function germanMap() {
-		  var styledMap = new google.maps.StyledMapType(styles,
-			{name: "Styled Map II"});
-			
-			// Map Coordinates
-			var myLatlng = new google.maps.LatLng(48.137647,11.534657);
-			var mapOptions = {
-				zoom: 16,
-				center: myLatlng,
-				scrollwheel: false,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			};
-			mapGer = new google.maps.Map(document.getElementById('map-canvas-ger'), mapOptions);
-			
-			//Marker Coordinates
-			 var marker = new google.maps.Marker({
-			  position:  new google.maps.LatLng(48.137647,11.534657),
-			  map: mapGer
-			});
-			
-			 mapGer.mapTypes.set('map_style', styledMap);
-			 mapGer.setMapTypeId('map_style');
-
-		}
+		
 		
 		function uruguayMap() {
 			  var styledMap = new google.maps.StyledMapType(styles,
@@ -143,53 +115,7 @@ $(window).load(function(){ // after loading the DOM
 				 
 			}
 		
-		function franceMap() {
-			  var styledMap = new google.maps.StyledMapType(styles,
-				{name: "Styled Map IV"});
-				
-				// Map Coordinates
-				var myLatlng = new google.maps.LatLng(43.698713,7.268892);
-				var mapOptions = {
-					zoom: 16,
-					center: myLatlng,
-					scrollwheel: false,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				};
-				mapFra = new google.maps.Map(document.getElementById('map-canvas-fra'), mapOptions);
-				
-				//Marker Coordinates
-				 var marker = new google.maps.Marker({
-				  position:  new google.maps.LatLng(43.698713,7.268892),
-				  map: mapFra
-				});
-				
-				 mapFra.mapTypes.set('map_style', styledMap);
-				 mapFra.setMapTypeId('map_style');
-			}
-		
-		function spainMap() {
-			  var styledMap = new google.maps.StyledMapType(styles,
-				{name: "Styled Map V"});
-				
-				// Map Coordinates
-				var myLatlng = new google.maps.LatLng(43.355742, -8.255784);
-				var mapOptions = {
-					zoom: 16,
-					center: myLatlng,
-					scrollwheel: false,
-					mapTypeId: google.maps.MapTypeId.ROADMAP
-				};
-				mapSpa = new google.maps.Map(document.getElementById('map-canvas-spa'), mapOptions);
-				
-				//Marker Coordinates
-				 var marker = new google.maps.Marker({
-				  position:  new google.maps.LatLng(43.355742, -8.255784),
-				  map: mapSpa
-				});
-				
-				 mapSpa.mapTypes.set('map_style', styledMap);
-				 mapSpa.setMapTypeId('map_style');
-			}
+	
 			
 		google.maps.event.addDomListener(window, 'load', initialize);
 		google.maps.event.addDomListener(window, 'resize', initialize);

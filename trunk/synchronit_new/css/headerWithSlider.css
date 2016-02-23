@@ -93,13 +93,10 @@ video{
 #left-arrow {
 	left: 3%;
 	background: url(images/prev-arrow.png) no-repeat;
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
-	-ms-transform:scaleX(-1); /* IE 9 */
 }
 #right-arrow {
 	right: 3%;
-	background: url(images/prev-arrow.png) no-repeat;
+	background: url(images/next-arrow.png) no-repeat;
 	
 }
 

@@ -400,17 +400,10 @@ $window.disablescroll('undo');
 		google.maps.event.trigger(mapSwiss, 'resize');
 		mapSwiss.setCenter(myLatlng);
 
-		myLatlng = new google.maps.LatLng(48.137647,11.534657);
-		google.maps.event.trigger(mapGer, 'resize');
-		mapGer.setCenter(myLatlng);
-
 		myLatlng = new google.maps.LatLng(-34.9073784,-56.198578);
 		google.maps.event.trigger(mapUy, 'resize');
 		mapUy.setCenter(myLatlng);
 
-		myLatlng = new google.maps.LatLng(43.698713,7.268892);
-		google.maps.event.trigger(mapFra, 'resize');
-		mapFra.setCenter(myLatlng);
 	});
 
 
