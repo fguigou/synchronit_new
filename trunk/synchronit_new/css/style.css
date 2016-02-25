@@ -455,7 +455,7 @@ h3.section_name{
 	width: inherit;
 	z-index: 1000;
 }
-#content div{
+#content > div{
 	position: relative;
 }
 
