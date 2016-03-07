@@ -8,16 +8,10 @@
 	<meta name="description" content="Responsive HTML Template - Home Page">
 	<title>SYNCHRONIT -- WE DO SOFTWARE, WE DO IT AGILE</title>
 
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
 	<link rel='stylesheet' href='dist/css/_bower.min.css' media='screen' />
+	<link rel='stylesheet' href='css/style.css' media='screen' />
+
 	<link rel='stylesheet' href='dist/css/synchronit.min.css' media='screen' />
-	<link rel="stylesheet" href="css/headerWithSlider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/lightbox.html" type="text/css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen" />
-	<link rel="stylesheet" href="css/slidedeck.skin.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="css/slidedeck.skin.css" type="text/css" media="screen" />
-	<link href="css/least.min.css" rel="stylesheet">
-	<link href="css/jquery.easy-pie-chart.css" rel="stylesheet">
 
 	<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -26,31 +20,10 @@
 	 <style>
 		  html, body{ margin: 0; padding: 0; height: 100%; }
 	</style>
-
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="js/jquery.onscreen.min.js"></script>
-	<script type="text/javascript" src="js/jQuery.appear.js"></script>
-	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<!-- 	<script type="text/javascript" src="js/canvas.js"></script> -->
-	<!--
-	<script type="text/javascript" src="js/superfish.js"></script>
-
-	<script type="text/javascript" src="js/easypiechart.js"></script>
-
-	<script type="text/javascript" src="js/niceScroll.js"></script>
-	<script type="text/javascript" src="js/slidedeck.jquery.lite.js"></script>
-
-	<script src="js/jquery.lazyload.js"></script>
-
-	-->
-	<script src="js/least.min.js"></script>
-
-	<script type="text/javascript" src="js/disableScroll.js"></script>
-
-
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="dist/js/_bower.js"></script>
+	<script type="text/javascript" src="dist/js/synchronit.js"></script>
+
 
 	<script type="text/javascript">
 		document.documentElement.className = 'js';
@@ -63,16 +36,14 @@
 				<!--MENU-->
 				<div id="menu" class="clearfix small_header">
 					<a href="#" id="mobile_nav" class="closed">Navigation Menu</a>
-				
+
 					<nav id="main-menu">
 						<a class="logoContainer" href="#main_header"><div class='logoImage'  id="logo" alt="logo" ></div></a> <!-- Small logo in menu -->
-					
+
 						<ul id="menu-main_menu" class="nav">
-<!-- 							<li><a href="#main_header">Home</a></li> -->
 							<li><a href="#services">What do we do?</a></li>
-							<li><a href="#recent-work">Our Team</a></li>
-<!-- 							<li><a href="#team">Our Values</a></li> -->
 							<li><a href="#about">About Us</a></li>
+							<li><a href="#recent-work">Our Team</a></li>
 							<li><a href="#fr_contact">Where are we?</a></li>
 							<li><a href="#fr_contact_form">Contact</a></li>
 						</ul>
@@ -86,12 +57,7 @@
 				     <a href="#" id="down_arrow"> <img src="images/downArrow.png" alt='img' /> </a>
 				</div> -->
 
-				<div class="fixed_mary">
-                     <a href="http://www.poppendieck.com/" target="_blank"> <img src="images/team/mary_poppendieck-resized.png" alt='img'/> </a>
-                </div>
-                <div class="fixed_thumb">
-                     <a href="http://www.poppendieck.com/" target="_blank"> <img src="images/team/thumbsUp.png" alt='img'/> </a>
-                </div>
+
 
 				<!--SLIDER-->
 				<div id="header_featured" class="flexslider clearfix">
@@ -103,7 +69,7 @@
 							<div class="slide_wrap">
 								<div class="featured_box">
 									<a href="#">
-										<img src="images/slider/mntn3.png" alt='img' />
+										<img src="images/slider/mntn3.jpg" alt='img' />
 									</a>
 									<div class="fr_image_description">
 										<div class="fr_inner_description">
@@ -175,7 +141,7 @@
 						<img class="icon aligncenter" src="images/service_img/5.png" alt="page icon">
 						<h3>Support & Outsourcing</h3>
 						<p>Since 2004 we learned how to balance onshore and offshore efforts.<br/>Do you want a team offshore, working as smoothly as if it were onshore? Drop us a line.</p>
-				
+
 					</div> <!-- end .service -->
 					<div class="service last">
 						<img class="icon aligncenter" src="images/service_img/growth.png" alt="page icon">
@@ -201,398 +167,6 @@
 			</div>
 		</section>
 
-				<!--RECENT WORK SECTION-->
-		<section id="recent-work" class="row">
-			<h3 class="section_name">Our Team</h3>
-            <div class="ul_container">
-            <ul id="gallery">
-
-				<li id="fullPreview" class="clearfix" style="display: none;">
-					<img src="img/full/10.html" alt="portfolio_img" >
-					<div class="fullCaption">
-                    </div><figure class="close"></figure>
-				</li><!-- end of #fullPreview -->
-
-				<!-- ALVARO -->
-		          <li>
-                    <a href="images/portfolio_large/alvaro.jpg"></a>
-                    <img data-original="images/portfolio/alvaro.jpg" src="images/portfolio/alvaro.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Alvaro Castroman
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    CTO
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>" Life is sailing … windsurf shows how to flow with it."</strong>
-							After finishing a SW Engineering diploma at the "Universidad de la República" (UDELAR) of Uruguay, performing other studies in the University of Helsinski and working in some other SW companies, Alvaro joined a crazy group of entrepreneurs trying to produce a web-based Open Office, the so-called "OWO" (Open Web Office) in the year 2004.</br></br>
-							The experience lasted almost one year, costed about € 50-60K and resulted in a 2004 style-like version using RemoteScripting (AJAX was starting to use the undocumented feature of XML-RPC) and set the basis for a future project in Germany.</br></br>
-							Those attempts in Germany were also difficult and the company finally closed, except for one single "employee": Alvaro.</br></br>
-							Aftere a couple of years, new opportunities arised and this time, things seem to be better.</p>
-                </li><!-- end li -->
-				
-				 <!-- FERNANDO GUIGOU -->
-                <li>
-                    <a href="images/portfolio_large/fernandoG.jpg"></a>
-                    <img data-original="images/portfolio/fernandoG.jpg" src="images/portfolio/fernandoG.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Fernando Guigou
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    CEO
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>"Life is not always fair. But it usually gives another chance."</strong></br>
-						<strong>"Life is (as my father used to say) … a Tango, and you better know how to dance it."</strong></br>
-						<strong>"Life is just worth living it. To live is to experience. And to experience is to learn."</strong></br>
-						<strong>"Life is a paradise that we do not always see.""</strong></br></br>
-                        After studying IT, Psychology, selling eggs, chickens, newspapers and magazines, Fernando enjoyed 10 unforgettable years working in the IT Department (DPI) of the University Hospital of Uruguay.</br></br>
-                        Some initiatives and the continuous search of the ideal place to live brought him (in different IT roles but always doing "hands-on" development), from Uruguay to Argentina, then to Germany, now to Switzerland and maybe tomorrow to Brazil …</br>
-                        "Ojalá!" -he says, in spanish-.
-                </li><!-- end li -->
-
-                <!-- BRIAN -->
-                <li>
-                    <a href="images/portfolio_large/brian.jpg"></a>
-                    <img data-original="images/portfolio/brian.jpg" src="images/portfolio/brian.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Brian Tobler
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant, Scrum Master
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>"Life is Hakuna Matata, stop worrying about it and start dealing with it"</strong></br>
-						Since little I loved the IT world and it's capacity to amaze me every single day since then</br></br>
-						In the previous years I had the luck to work with a lot of different talented people in different parts of the world (USA, ASIA, Europe, Latin America, etc), this invaluable experience helped me to adquire a set of skills, from dealing with technical issues like coding, networking, and team/technical management to more natural areas like the development of interpersonal, negotiation, and mediation skills.</br></br>
-						Today, I'm lucky to face the same situation once more, working as an associated consultant for a firm in Switzerland, surrounded with a lot of amazing people, in this never-ending dance of learning, teaching and the most important thing, enjoying the ride as much as possible. </p>
-						 </li><!-- end li -->
-       
-			    <!-- FEDE BECARIA -->
-                  <li>
-                    <a href="images/portfolio_large/federicoB.jpg"></a>
-                    <img data-original="images/portfolio/federico.jpg" src="images/portfolio/federico.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Federico Becaria
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant, Scrum Master
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>"Life is like a box of chocolates. You never know what you're gonna get."</strong>
-                            After getting his Software Engineering diploma at the "Universidad de la República" (UDELAR) of Uruguay, Federico worked in a variety of projects for different companies. Among others, he has experience with bank systems, management systems for state-owned companies, and credit card management systems. Thanks to some of those projects, he had the chance to travel and work in countries such as Mexico, Spain and Germany.</br></br>
-							This diversity of projects is the consequence of his constant search for “his place” in the computer world which has led him to work with a lot of interesting people and with different languages and technologies.</br></br>
-							The mentioned search did not end, and will probably never end, because he enjoys changing environments and facing new and different challenges.</br></br>
-							Federico is also a passionate reader and has found in running something much greater than just a sport, which, apart from being a healthy exercise, gave him the opportunity to meet different people and places, and to live unforgettable experiences. </p>
-                </li><!-- end li -->
-
-               
-				<!-- ANA -->
-		          <li>
-                    <a href="images/portfolio_large/ana.jpg"></a>
-                    <img data-original="images/portfolio/ana.jpg" src="images/portfolio/ana.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Ana Miraldo
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong> "Life is ... finding the right balance between family, work, children, fun, partner, oneself and everything, including relax, of course :-)"</strong></br>
-							After obtaining her Programmer Analyst diploma in 2003 at Universidad ORT, Ana started working for large public organizations in Uruguay, in different IT positions and finally, as auditor.</br></br>
-							Later she moved to France and joined this team to apply her abilities and her determination to software testing.
-                    </p>
-                </li><!-- end li -->
-               
-
-                <!-- JONATAN -->
-                <li>
-                    <a href="images/portfolio_large/jona.jpg"></a>
-                    <img data-original="images/portfolio/jona.jpg" src="images/portfolio/jona.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Jonatan Aguirre
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>"Life is like the wind, constantly changing, with soft breezes and strong storms."</strong></br>
-                            After taking the decision that would mark the rest of my life, I started my studies in SW Engineering at the "Universidad de la República" (UDELAR) of Uruguay. I am currently studying the last year of the career. <br></br>
-                            I worked at another software company for 2 years and finally I started to work with this amazing group of people at the beginning of 2012.
-                    </p>
-                </li><!-- end li -->
-
-                <!-- LEANDRO -->
-                  <li>
-                    <a href="images/portfolio_large/mysteryLarge.jpg"></a>
-                    <img data-original="images/portfolio/leandro.jpg" src="images/portfolio/leandro.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Leandro Leites
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Associated Consultant, Scrum Master
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>"Life is far too important, a thing ever to talk seriously about.""</strong></br> <q> -Oscar Wilde, Lady Windermere's Fan, 1892, Act I- <q></br></br>
-                        And a citation from my grandfather that I still find difficult to achive:
-                        <strong>“Life is learning … if you are not learning, you are dead”</strong></br>
-						After one year and a half of SW Engineering studies, he left the career telling everyone he will not write software again in his entire life.</br></br>
-						Four years and an Analyst in Economics diploma later, Leandro starts developing software by its own to automate process and reports in one of the biggest financial companies of Uruguay.</br></br>
-						Later he works in two software companies to improve his software developer skills, both companies leaders in their respective industry in US, automotive and e-learning.</br></br>
-						Today for the first time he is working in software in which he could use all his economics knowledge.</br></br>
-						Everyone asks him about what he will do when he finally gets his Economist diploma, “write some code I guess” he always answer.
-                    </p>
-                </li><!-- end li -->
-
-                <!-- LUCIA -->
-                  <li>
-                    <a href="images/portfolio_large/lucia.jpg"></a>
-                    <img data-original="images/portfolio/lucia.jpg" src="images/portfolio/lucia.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Lucia Marroig
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant, Scrum Master
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong> "Life is problems. Living is solving problems."</strong></br>
-												A great passion for technology and the desire to understand and participate actively in the application of the latest trends to solve real life problems, made up Lucia's mind to study Software Engineering.
-												<br />
-												While conducting her studies, at early stages of her career, she began to develop for a Uruguayan software company, serving daily thousands of users in over twenty countries. There, she managed to earn experience, learn new technologies and contribute with her own ideas to improve and maintain the product.
-												<br />
-												After two years, she decided to take a year off to travel around the world, visiting more than thirty countries. Which, consisted of an extremely enriching personal experience. When she returned to her native country, she joined Synchronit seeking to strengthen her capacities as a developer and dealing with challenging problems. Shortly after, she obtained her Software Engineer degree, as well as a Scrum Master certificate.
-
-                    </p>
-                </li><!-- end li -->
-
-                <!-- MARCOS DUTTO -->
-                <li>
-                    <a href="images/portfolio_large/marcos.jpg"></a>
-                    <img data-original="images/portfolio/marcosd.jpg" src="images/portfolio/marcosd.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Marcos Dutto
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant, Scrum Master
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>"Life is... simple, no need to complicate it"</strong></br>
-						After starting his studies as a Software Engineer, he joined different local companies in Uruguay. Medical care, Business Process Management, e-teaching and freelancing are parts of his recents activities.</br></br>
-						Nowadays, after getting his degree in Sofware Engineering, he started looking forward for new challenges such as the beginning of his career as a teacher in the University of the Republic and as an Asociated Consultant at Synchronit.
-                         </li><!-- end li -->
-
-                <!-- MARCOS PEREZ -->
-                <li>
-                    <a href="images/portfolio_large/marcosp.jpg"></a>
-                    <img data-original="images/portfolio/marcos.jpg" src="images/portfolio/marcos.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Marcos Perez
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>Life is like a aurora borealis explosion … It’s extremely short and extremely beautiful.</strong></br></br>
-						Since the beginning I always loved to solve problems creating systems, learning, etc. Always trying to create something to make things easier or better. On high school I finally I had Internet 24x7 :) and then I started to learn about hardware and PC repair and since then I continued with programming from where I continue to explore and discover new things with every line I put in a code.</br></br>
-						I finished “ Analyst in IT” at ORT Uruguay, while starting “System Engineer” studies at the same university. Meanwhile, I made a project with a partner which involved Computer Vision and after that I realized how little we know about all that exist in the world and I started to study Machine Learning & Computer Vision in order to create programs which goes the extra mile.</br></br>
-						On the professional line I was always involved with web development creating usable web applications, with the objective of building better experiences and functionalities that actually help the users to have success.
-						</p>
-                </li><!-- end li -->
-
-                <!-- MARTIN -->
-                  <li>
-                    <a href="images/portfolio_large/martin.JPG"></a>
-                    <img data-original="images/portfolio/martin.jpg" src="images/portfolio/martin.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Martin Reyes
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Associated Consultant
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>"Life is like gambling, it's not like you'll win every game, but as long as you have a chip in your hand it's not over yet…"</strong>
-                            After moving alone to another city at the age of 17, which was an enriching experience, Martin started his studies in SW Engineering at the "Universidad de la República" (UDELAR) of Uruguay.</br></br>
-							He started his career in Genexus Consulting as a SQA, and despite having a great year there, he realized that Quality Assurance was not what he really wanted to do and that he needed a change of scenery.</br></br>
-							Now, less than a year away of getting his diploma, he joined a group of extraordinary people developing Software and he thinks to have found what he was looking for.
-                            </p>
-                </li><!-- end li -->
-
-                <!-- YASIM -->
-                  <li>
-                    <a href="images/portfolio_large/yasim.jpg"></a>
-                    <img data-original="images/portfolio/yasim.jpg" src="images/portfolio/yasim.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Yasim Zeballos
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong> "Life is ... a Disney movie"</strong></br>
-
-                    </p>
-                </li><!-- end li -->
-                
-                 <!-- Marina Acosta -->
-                <li>
-                    <a href="images/portfolio_large/marina.jpg"></a>
-                    <img data-original="images/portfolio/marina.jpg" src="images/portfolio/marina.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Marina Acosta
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong>"Life is what you imagine, what you do and what you feel, so dream, work and enjoy it."</strong></br>
-					</p>
-				 </li><!-- end li -->
-                   <!-- YASIM -->
-                  <li>
-                    <a href="images/portfolio_large/dan.jpg"></a>
-                    <img data-original="images/portfolio/dan.jpg" src="images/portfolio/dan.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
-                    <div class="overLayer"></div>
-                    <div class="infoLayer">
-                        <ul>
-                            <li>
-                                <h2>
-                                    Dan Blanco
-                                </h2>
-                            </li>
-                            <li>
-                                <p>
-                                    Asociated Consultant
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="projectInfo">
-                        <strong> "Life is ... a Disney movie"</strong></br>
-
-                    </p>
-                </li><!-- end li -->        
-			</ul>
-			</div>
-		</section>
-		<!--RECENT WORK SECTION-->
-	
 
 		<!-- ABOUT US -->
 		<div id="about" class="row">
@@ -615,7 +189,7 @@
                         <p> Do you think you can make the difference,<br> then <strong><a href="#fr_contact_form"> join us</a></strong> and meet others like you </p>
                     </section>
 
-					
+
 					<section class="vision">
 						<h4>Vision ...</h4>
 						<p><strong> We dream</strong>, to be better. </p>
@@ -666,131 +240,11 @@
 		</div><!-- end of #about -->
 		<!-- ABOUT US -->
 
-
-
-		<!-- FUN FACTS
-		<div class="fixed_block fun_fucts">
-			<div class="sizers clearfix">
-				<div class="sixteen columns">
-					<h3 class="section_name">How about Some Fun Facts about our agency?</h3>
-				</div>
-				<div class="four columns">
-					<div class="fucts_counter" data-perc="1028">
-						<i class="fa fa-clock-o fa-4x"></i>
-						<span class="fucts_count highlight">1028</span>
-						<h6 class="fucts_name">Work hours</h6>
-					</div>
-				</div>
-				<div class="four columns">
-					<div class="fucts_counter" data-perc="60">
-						<i class="fa fa-users fa-4x"></i>
-						<span class="fucts_count highlight">60</span>
-						<h6 class="fucts_name">Happy clients</h6>
-					</div>
-				</div>
-				<div class="four columns">
-					<div class="fucts_counter" data-perc="590">
-						<i class="fa fa-coffee fa-4x"></i>
-						<span class="fucts_count highlight">590</span>
-						<h6 class="fucts_name">Cups of coffee</h6>
-					</div>
-				</div>
-				<div class="four columns">
-					<div class="fucts_counter" data-perc="450">
-						<i class="fa fa-sun-o fa-4x"></i>
-						<span class="fucts_count highlight">450</span>
-						<h6 class="fucts_name">Pizzas ordered</h6>
-					</div>
-				</div>
-			</div>
-		</div>
-		-->
-
-		<!--SHOWCASE
-		<div id="fr_showcase">
-			<div class="sizers clearfix">
-
-
-			</div>
-		</div>
-		SHOWCASE-->
-		
-			<!-- Values -->
-<!-- 			<div id="team" class="row"> -->
-<!-- 			<div class="clearfix"> -->
-<!-- 				<div class="section_description"> -->
-<!-- 					<h3 class="section_name">Our Values</h3> -->
-<!-- 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra ulla sem vitae neque. Quisque id sodales libero. </p> -->
-<!-- 				</div> -->
-<!--   				<div class="ul_container clearfix" style=""> -->
-<!-- 					<div class="team_person"> -->
-<!-- 					      <a class="value_anchor" href="#team_person"> -->
-<!-- 					      <img src="images/team/youmewe.jpg" alt="youmewe" style="max-width: 50%;"> -->
-<!-- 					      <div class="value_text_block"> -->
-<!-- 						<h6 class="team_name">YOU, US ... the big "WE"</h6> -->
-<!-- 					      </div> -->
-<!-- 					      </a> -->
-<!-- 					</div> -->
-
-<!-- 					<div class="team_person"> -->
-<!-- 					      <a class="value_anchor" href="#team_person"> -->
-<!-- 						<img src="images/team/liberte.jpg" alt="freedom" style="max-width: 50%;"> -->
-<!-- 						<div class="value_text_block"> -->
-<!-- 						  <h6 class="team_name">Liberté, Egalité, Fraternité</h6> -->
-<!-- 						</div> -->
-<!-- 						</a> -->
-<!-- 					</div> -->
-<!-- 					<div class="team_person"> -->
-<!-- 					      <a class="value_anchor" href="#team_person"> -->
-<!-- 						<img src="images/team/valueCreation.jpg" alt="value_creation" style="max-width: 50%;"> -->
-<!-- 						<div class="value_text_block"> -->
-<!-- 						  <h6 class="team_name">Value Creation</h6> -->
-<!-- 						</div> -->
-<!-- 						</a> -->
-<!-- 					</div> -->
-<!-- 					<div class="team_person"> -->
-<!-- 					  <a class="value_anchor" href="#team_person"> -->
-<!-- 						<img src="images/team/transparency.gif" alt="transparency" style="max-width: 50%;"> -->
-<!-- 						<div class="value_text_block"> -->
-<!-- 						  <h6 class="team_name">Transparency</h6> -->
-<!-- 						</div> -->
-<!-- 						</a> -->
-<!-- 					</div> -->
-<!--               	</div> -->
-<!-- 					<div id="values_big_text" class="ul_container" style="display: none;"> -->
-<!-- 					      <div id="youmewe" class="value_description value_text_block activeText" style="display: block;"> -->
-<!-- 						      <p>The first pre-requisite for a successful project, is to build up a team. And this is not a one-time process. It is a permanent activity.</p> -->
-<!-- 						      <p>When we are talking about applied-intelligence, we need to consider each human being as a whole. Creativity can only be released to its full-potential, once the whole person can focus on the right issues. </p> -->
-<!-- 						      <p>People build teams in order to overcome individual limitations (as Peter Drucker used to say) therefore it is important to constantly learn, collaborate, increase common knowledge and achieve an identification with team goals that makes possible to overcome individual egos</p> -->
-<!-- 					      </div> -->
-<!-- 					      <div id="freedom" class="value_description value_text_block" style="display: block;"> -->
-<!-- 							<p>After more than 200 years of the French revolution that influenced so many democracies, the fundamental values that inspired it are still to be reaffirmed every day. Universal opportunity is a concept and a practice that we adhere to.</p> -->
-<!-- 							<p>At Synchronit, we have no managers or hierarchical positions in the traditional sense.</p> -->
-<!-- 							<p>We believe, each fellow to be a complete professional and entrepreneur and we help as a team, in this personal and professional quest of continuous growth.</p> -->
-<!-- 							<p>The reason is simple and (why not?) also selfish: the better each member is, the better it is for all. We learned that since living in caves and it is part of what makes us humans.</p> -->
-<!-- 					      </div> -->
-<!-- 					      <div id="value_creation" class="value_description value_text_block" style="display: block;"> -->
-<!-- 							<p>We believe, that sharing your work with others for the creation of value means that you benefit from their work, as well as they benefit from yours.</p> -->
-<!-- 							<p>We believe, that sharing this value is not a mathematical equation and that "the whole is more than the sum of the parts".</p> -->
-<!-- 							<p>We believe, that proper value creation should enable a relaxed life for all members, whilst ensuring company's existence.</p> -->
-<!-- 							<p>We believe, that together with our customers the creation of value is such, that win-win situations are a natural consequence of sharing a bright future.</p> -->
-<!-- 							<p>We believe, that accounting permits an objective measurment of value creation</p> -->
-<!-- 					      </div> -->
-<!-- 					      <div id="transparency" class="value_description value_text_block" style="display: block;"> -->
-<!-- 							<p>Transparency is one of the best solutions against corruption.</p> -->
-<!-- 							<p>And we do not mean just political or economic. We believe in value creation and fair compensation.</p> -->
-<!-- 							<p>This is not a romantic or utopic position. It helps and forces us to focus in the creation of real value at every single moment and not just to serve tribute to past glories.</p> -->
-<!-- 							<p>In practice, this means that at Synchronit there is no profit-taken nor dividends. Each person earns purely based on the contribution done to generate value. -->
-<!-- 							Modern companies are starting to think in this way, like Amazon for example.</p> -->
-<!-- 					      </div> -->
-<!-- 					</div> -->
-<!-- 			</div> end of .sizers -->
-<!-- 		</div> -->
 		<!-- Values -->
 		<div id="youmewe" class="value_description value_text_block activeText" data-dialog-class='value-dialog' style="display: block;">
-			<div class='value-background you-me-we-background'> 
+			<div class='value-background you-me-we-background'>
 			</div>
-			<div class='value-details'> 
+			<div class='value-details'>
 			      <h3>You+Me=the big "WE"</h3>
 			      <p>The first pre-requisite for a successful project, is to build up a team. And this is not a one-time process. It is a permanent activity.</p>
 			      <p>When we are talking about applied-intelligence, we need to consider each human being as a whole. Creativity can only be released to its full-potential, once the whole person can focus on the right issues. </p>
@@ -799,11 +253,11 @@
 	      	<div class='clearfix'></div>
 	      </div>
 	      <div id="freedom" class="value_description value_text_block" data-dialog-class='value-dialog'  style="display: block;">
-			<div class='value-background freedom-background'> 
+			<div class='value-background freedom-background'>
 			</div>
-			<div class='value-details'> 
+			<div class='value-details'>
 				<h3>Liberté, Egalité, Fraternité</h3>
-			
+
 				<p>After more than 200 years of the French revolution that influenced so many democracies, the fundamental values that inspired it are still to be reaffirmed every day. Universal opportunity is a concept and a practice that we adhere to.</p>
 				<p>At Synchronit, we have no managers or hierarchical positions in the traditional sense.</p>
 				<p>We believe, each fellow to be a complete professional and entrepreneur and we help as a team, in this personal and professional quest of continuous growth.</p>
@@ -811,11 +265,11 @@
 		     </div>
 	      </div>
 	      <div id="value_creation" class="value_description value_text_block" data-dialog-class='value-dialog'  style="display: block;">
-			<div class='value-background value-creation-background'> 
+			<div class='value-background value-creation-background'>
 			</div>
-			<div class='value-details'> 
+			<div class='value-details'>
 				<h3>Value Creation</h3>
-			
+
 				<p>We believe, that sharing your work with others for the creation of value means that you benefit from their work, as well as they benefit from yours.</p>
 				<p>We believe, that sharing this value is not a mathematical equation and that "the whole is more than the sum of the parts".</p>
 				<p>We believe, that proper value creation should enable a relaxed life for all members, whilst ensuring company's existence.</p>
@@ -824,11 +278,11 @@
 	      	</div>
 	      </div>
 	      <div id="transparency" class="value_description value_text_block" data-dialog-class='value-dialog'  style="display: block;">
-			<div class='value-background transparency-background'> 
+			<div class='value-background transparency-background'>
 			</div>
-			<div class='value-details'> 
+			<div class='value-details'>
 				<h3>Transparency</h3>
-			
+
 				<p>Transparency is one of the best solutions against corruption.</p>
 				<p>And we do not mean just political or economic. We believe in value creation and fair compensation.</p>
 				<p>This is not a romantic or utopic position. It helps and forces us to focus in the creation of real value at every single moment and not just to serve tribute to past glories.</p>
@@ -836,7 +290,512 @@
 				Modern companies are starting to think in this way, like Amazon for example.</p>
 	    	</div>
 	      </div>
+				<!--RECENT WORK SECTION-->
+		<section id="recent-work" class="row">
+			<h3 class="section_name">Our Team</h3>
+						<div class="ul_container">
+						<ul class='team-gallery'>
+
 		
+				<!-- ALVARO -->
+							<li>
+									<div class='team-open-dialog-item'>
+											<img data-original="images/portfolio/alvaro.jpg" src="images/portfolio/alvaro.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+
+											<div class="over-layer"></div>
+											<div class="info-layer">
+												<ul>
+														<li>
+																<h2>
+																		Alvaro Castroman
+																</h2>
+														</li>
+															<li>
+																	<p>
+																		CTO, Associated Consultant, Scrum Master
+																	</p>
+															</li>
+													</ul>
+											</div>
+										</div>
+										<div class="team-member-dialog">
+											<img data-original="images/portfolio_large/alvaro.jpg" src="images/portfolio_large/alvaro.jpg" alt="Alvaro Image">
+
+											 <div class='team-dialog-member-info'>
+												<h2>
+														 Alvaro Castroman
+												</h2>
+												<strong>" Life is sailing … windsurf shows how to flow with it."</strong>
+												After finishing a SW Engineering diploma at the "Universidad de la República" (UDELAR) of Uruguay, performing other studies in the University of Helsinski and working in some other SW companies, Alvaro joined a crazy group of entrepreneurs trying to produce a web-based Open Office, the so-called "OWO" (Open Web Office) in the year 2004.</br></br>
+												The experience lasted almost one year, costed about € 50-60K and resulted in a 2004 style-like version using RemoteScripting (AJAX was starting to use the undocumented feature of XML-RPC) and set the basis for a future project in Germany.</br></br>
+												Those attempts in Germany were also difficult and the company finally closed, except for one single "employee": Alvaro.</br></br>
+												Aftere a couple of years, new opportunities arised and this time, things seem to be better.
+											</div>
+										</div>
+								</li><!-- end li -->
+
+
+								<!-- ANA -->
+								<li>
+											<div class='team-open-dialog-item'>
+
+												<img data-original="images/portfolio/ana.jpg" src="images/portfolio/ana.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+												<div class="over-layer"></div>
+												<div class="info-layer">
+														<ul>
+																<li>
+																		<h2>
+																				Ana Miraldo
+																		</h2>
+																</li>
+																<li>
+																		<p>
+																				Asociated Consultant
+																		</p>
+																</li>
+														</ul>
+												</div>
+											</div>
+											 <div class="team-member-dialog">
+												 <img src='images/portfolio_large/ana.jpg' />
+												<div class='team-dialog-member-info'>
+													<h2>
+															Ana Miraldo
+													</h2>
+													<strong> "Life is ... finding the right balance between family, work, children, fun, partner, oneself and everything, including relax, of course :-)"</strong></br>
+								After obtaining her Programmer Analyst diploma in 2003 at Universidad ORT, Ana started working for large public organizations in Uruguay, in different IT positions and finally, as auditor.</br></br>
+								Later she moved to France and joined this team to apply her abilities and her determination to software testing.
+											</div>
+											</div>
+									</li><!-- end li -->
+
+								<!-- BRIAN -->
+								<li>
+										<div class='team-open-dialog-item'>
+
+										<img data-original="images/portfolio/brian.jpg" src="images/portfolio/brian.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+										<div class="over-layer"></div>
+										<div class="info-layer">
+												<ul>
+														<li>
+																<h2>
+																		Brian Tobler
+																</h2>
+														</li>
+														<li>
+																<p>
+																		Asociated Consultant, Scrum Master
+																</p>
+														</li>
+												</ul>
+										</div>
+									</div>
+										 <div class="team-member-dialog">
+											 <img src='images/portfolio_large/brian.jpg' />
+											 <div class='team-dialog-member-info'>
+												 <h2>
+														Brian Tobler
+												</h2>
+											 <strong>"Life is Hakuna Matata, stop worrying about it and start dealing with it"</strong></br>
+						Since little I loved the IT world and it's capacity to amaze me every single day since then</br></br>
+						In the previous years I had the luck to work with a lot of different talented people in different parts of the world (USA, ASIA, Europe, Latin America, etc), this invaluable experience helped me to adquire a set of skills, from dealing with technical issues like coding, networking, and team/technical management to more natural areas like the development of interpersonal, negotiation, and mediation skills.</br></br>
+						Today, I'm lucky to face the same situation once more, working as an associated consultant for a firm in Switzerland, surrounded with a lot of amazing people, in this never-ending dance of learning, teaching and the most important thing, enjoying the ride as much as possible.
+												</div>
+										</div>
+						 </li><!-- end li -->
+						 <!-- Dan -->
+						<li>
+							<div class='team-open-dialog-item'>
+								<img data-original="images/portfolio/dan.jpg" src="images/portfolio/dan.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+								<div class="over-layer"></div>
+								<div class="info-layer">
+										<ul>
+												<li>
+														<h2>
+																Dan Blanco
+														</h2>
+												</li>
+												<li>
+														<p>
+																Asociated Consultant
+														</p>
+												</li>
+										</ul>
+								</div>
+							</div>
+							<div class="team-member-dialog">
+								 <img src='images/portfolio_large/dan.jpg'/>
+								 <div class='team-dialog-member-info'>
+									 <h2>
+											 Dan Blanco
+									 </h2>
+									 <strong> &quot;Life is like photography. Focus is an ingredient to have a good shot.&quot;</strong></br>
+									 Dan is currently studying System Engineering at the ORT University, his first IT job was as a quality assurance tester where he learned about the life cycle of software applications.
+									 After a while testing applications, he was looking forward to be a part of a development team, so he changed his job in a new company where he managed to improve his skills in software development.
+									 Finally Dan came to Synchronit looking for new challenges and enhance his developer skills and knowledge.
+								 </div>
+							</div>
+					</li><!-- end li -->
+						 <!-- FEDE BECARIA -->
+				 <li>
+										<div class='team-open-dialog-item'>
+
+											<img data-original="images/portfolio/federico.jpg" src="images/portfolio/federico.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+											<div class="over-layer"></div>
+											<div class="info-layer">
+													<ul>
+															<li>
+																	<h2>
+																			Federico Becaria
+																	</h2>
+															</li>
+															<li>
+																	<p>
+																			Asociated Consultant, Scrum Master
+																	</p>
+															</li>
+													</ul>
+											</div>
+										</div>
+										<div class="team-member-dialog">
+											<img src='images/portfolio_large/federicoB.jpg' />
+											 <div class='team-dialog-member-info'>
+												 <h2>
+														 Federico Becaria
+												 </h2>
+												<strong>"Life is like a box of chocolates. You never know what you're gonna get."</strong>
+														After getting his Software Engineering diploma at the "Universidad de la República" (UDELAR) of Uruguay, Federico worked in a variety of projects for different companies. Among others, he has experience with bank systems, management systems for state-owned companies, and credit card management systems. Thanks to some of those projects, he had the chance to travel and work in countries such as Mexico, Spain and Germany.</br></br>
+							This diversity of projects is the consequence of his constant search for “his place” in the computer world which has led him to work with a lot of interesting people and with different languages and technologies.</br></br>
+							The mentioned search did not end, and will probably never end, because he enjoys changing environments and facing new and different challenges.</br></br>
+							Federico is also a passionate reader and has found in running something much greater than just a sport, which, apart from being a healthy exercise, gave him the opportunity to meet different people and places, and to live unforgettable experiences.
+											</div>
+									</div>
+								</li><!-- end li -->
+								<!-- FERNANDO GUIGOU -->
+									<li>
+
+											<div class='team-open-dialog-item'>
+												<img data-original="images/portfolio/fernandoG.jpg" src="images/portfolio/fernandoG.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+												<div class="over-layer"></div>
+												<div class="info-layer">
+														<ul>
+																<li>
+																		<h2>
+																				Fernando Guigou
+																		</h2>
+																</li>
+																<li>
+																		<p>
+																				CEO, Associated Consultant, Scrum Master
+																		</p>
+																</li>
+														</ul>
+												</div>
+											</div>
+										 <div class="team-member-dialog">
+												<img src='images/portfolio_large/fernandoG.jpg' />
+												 <div class='team-dialog-member-info'>
+													 <h2>
+															Fernando Guigou
+													 </h2>
+													<strong>"Life is not always fair. But it usually gives another chance."</strong></br>
+							<strong>"Life is (as my father used to say) … a Tango, and you better know how to dance it."</strong></br>
+							<strong>"Life is just worth living it. To live is to experience. And to experience is to learn."</strong></br>
+							<strong>"Life is a paradise that we do not always see.""</strong></br></br>
+													After studying IT, Psychology, selling eggs, chickens, newspapers and magazines, Fernando enjoyed 10 unforgettable years working in the IT Department (DPI) of the University Hospital of Uruguay.</br></br>
+													Some initiatives and the continuous search of the ideal place to live brought him (in different IT roles but always doing "hands-on" development), from Uruguay to Argentina, then to Germany, now to Switzerland and maybe tomorrow to Brazil …</br>
+													"Ojalá!" -he says, in spanish-.
+												</div>
+										 </div>
+									</li><!-- end li -->
+
+
+
+								<!-- JONATAN -->
+								<li>
+										<div class='team-open-dialog-item'>
+											<img data-original="images/portfolio/jona.jpg" src="images/portfolio/jona.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+											<div class="over-layer"></div>
+											<div class="info-layer">
+													<ul>
+															<li>
+																	<h2>
+																			Jonatan Aguirre
+																	</h2>
+															</li>
+															<li>
+																	<p>
+																			Asociated Consultant
+																	</p>
+															</li>
+													</ul>
+											</div>
+										</div>
+										<div class="team-member-dialog">
+											<img src='images/portfolio_large/jona.jpg'/>
+											<div class='team-dialog-member-info'>
+												 <h2>
+														Jonatan Aguirre
+												 </h2>
+												<strong>"Life is like the wind, constantly changing, with soft breezes and strong storms."</strong></br>
+														After taking the decision that would mark the rest of my life, I started my studies in SW Engineering at the "Universidad de la República" (UDELAR) of Uruguay. I am currently studying the last year of the career. <br></br>
+														I worked at another software company for 2 years and finally I started to work with this amazing group of people at the beginning of 2012.
+										</div>
+										</div>
+								</li><!-- end li -->
+
+								<!-- LEANDRO -->
+									<li>
+										<div class='team-open-dialog-item'>
+											<img data-original="images/portfolio/leandro.jpg" src="images/portfolio/leandro.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+											<div class="over-layer"></div>
+											<div class="info-layer">
+													<ul>
+															<li>
+																	<h2>
+																			Leandro Leites
+																	</h2>
+															</li>
+															<li>
+																	<p>
+																			Associated Consultant, Scrum Master
+																	</p>
+															</li>
+													</ul>
+											</div>
+										</div>
+										 <div class="team-member-dialog">
+											 <img src='images/portfolio_large/leandro.jpg' />
+											 <div class='team-dialog-member-info'>
+												 <h2>
+														Leandro Leites
+												 </h2>
+												<strong>"Life is far too important, a thing ever to talk seriously about.""</strong></br> <q> -Oscar Wilde, Lady Windermere's Fan, 1892, Act I- <q></br></br>
+												And a citation from my grandfather that I still find difficult to achive:
+												<strong>“Life is learning … if you are not learning, you are dead”</strong></br>
+						After one year and a half of SW Engineering studies, he left the career telling everyone he will not write software again in his entire life.</br></br>
+						Four years and an Analyst in Economics diploma later, Leandro starts developing software by its own to automate process and reports in one of the biggest financial companies of Uruguay.</br></br>
+						Later he works in two software companies to improve his software developer skills, both companies leaders in their respective industry in US, automotive and e-learning.</br></br>
+						Today for the first time he is working in software in which he could use all his economics knowledge.</br></br>
+						Everyone asks him about what he will do when he finally gets his Economist diploma, “write some code I guess” he always answer.
+											</div>
+										</div>
+								</li><!-- end li -->
+
+								<!-- LUCIA -->
+									<li>
+										<div class='team-open-dialog-item'>
+											<img data-original="images/portfolio/lucia.jpg" src="images/portfolio/lucia.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+											<div class="over-layer"></div>
+											<div class="info-layer">
+													<ul>
+															<li>
+																	<h2>
+																			Lucia Marroig
+																	</h2>
+															</li>
+															<li>
+																	<p>
+																			Asociated Consultant, Scrum Master
+																	</p>
+															</li>
+													</ul>
+											</div>
+										</div>
+										 <div class="team-member-dialog">
+											 <img src='images/portfolio_large/lucia.jpg' />
+											 <div class='team-dialog-member-info'>
+												 <h2>
+														Lucia Marroig
+												 </h2>
+												<strong> "Life is problems. Living is solving problems."</strong></br>
+												A great passion for technology and the desire to understand and participate actively in the application of the latest trends to solve real life problems, made up Lucia's mind to study Software Engineering.
+												<br />
+												While conducting her studies, at early stages of her career, she began to develop for a Uruguayan software company, serving daily thousands of users in over twenty countries. There, she managed to earn experience, learn new technologies and contribute with her own ideas to improve and maintain the product.
+												<br />
+												After two years, she decided to take a year off to travel around the world, visiting more than thirty countries. Which, consisted of an extremely enriching personal experience. When she returned to her native country, she joined Synchronit seeking to strengthen her capacities as a developer and dealing with challenging problems. Shortly after, she obtained her Software Engineer degree, as well as a Scrum Master certificate.
+
+										</div>
+										</div>
+								</li><!-- end li -->
+
+
+
+								<!-- MARCOS PEREZ -->
+								<li>
+									<div class='team-open-dialog-item'>
+
+											<img data-original="images/portfolio/marcos.jpg" src="images/portfolio/marcos.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+											<div class="over-layer"></div>
+											<div class="info-layer">
+													<ul>
+															<li>
+																	<h2>
+																			Marcos Perez
+																	</h2>
+															</li>
+															<li>
+																	<p>
+																			Asociated Consultant
+																	</p>
+															</li>
+													</ul>
+											</div>
+										</div>
+										 <div class="team-member-dialog">
+											 <img src='images/portfolio_large/marcosp.jpg' />
+											 <div class='team-dialog-member-info'>
+												 <h2>
+														Marcos Perez
+												 </h2>
+												<strong>Life is like a aurora borealis … It’s extremely short and extremely beautiful.</strong></br></br>
+						Since the beginning I always loved to solve problems creating systems, learning, etc. Always trying to create something to make things easier or better. On high school I finally I had Internet 24x7 :) and then I started to learn about hardware and PC repair and since then I continued with programming from where I continue to explore and discover new things with every line I put in a code.</br></br>
+						I finished “ Analyst in IT” at ORT Uruguay, while starting “System Engineer” studies at the same university. Meanwhile, I made a project with a partner which involved Computer Vision and after that I realized how little we know about all that exist in the world and I started to study Machine Learning & Computer Vision in order to create programs which goes the extra mile.</br></br>
+						On the professional line I was always involved with web development creating usable web applications, with the objective of building better experiences and functionalities that actually help the users to have success.
+									</div>
+						</div>
+								</li><!-- end li -->
+								<!-- Marina Acosta -->
+							 <li>
+									<div class='team-open-dialog-item'>
+										<img data-original="images/portfolio/marina.jpg" src="images/portfolio/marina.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+										<div class="over-layer"></div>
+										<div class="info-layer">
+												<ul>
+														<li>
+																<h2>
+																		Marina Acosta
+																</h2>
+														</li>
+														<li>
+																<p>
+																		Asociated Consultant
+																</p>
+														</li>
+												</ul>
+										</div>
+									</div>
+									 <div class="team-member-dialog">
+										 <img src='images/portfolio_large/marina.jpg' />
+										<div class='team-dialog-member-info'>
+											 <h2>
+													Marina Acosta
+											 </h2>
+											<strong>"Life is what you imagine, what you do and what you feel, so dream, work and enjoy it."</strong></br>
+											When the time of choosing a career came, Marina had a variety of options she would like to select. After many talks with her parents, friends, teachers, and basically everyone in her way, the decision was taken: Software Engineering.
+											During her years as a student, she had passed through some ups and downs about her choise, until one day she found herself working in the construction of a school software in a very passionated way,  having the desire of finding the best solutions for software problems, and feeling happy for the obtained results.
+											This experience give Marina the oportunity of knowing many areas of her career that she likes.
+											Lately, she joined Synchronit, to give herself the oportunity of looking at her career from another point of view: Quality Assurance, and is starting her final degree project at Universidad de la Republica.
+										</div>
+							 </div>
+							 </li><!-- end li -->
+								<!-- MARTIN -->
+									<li>
+										<div class='team-open-dialog-item'>
+
+											<img data-original="images/portfolio/martin.jpg" src="images/portfolio/martin.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+											<div class="over-layer"></div>
+											<div class="info-layer">
+													<ul>
+															<li>
+																	<h2>
+																			Martin Reyes
+																	</h2>
+															</li>
+															<li>
+																	<p>
+																			Associated Consultant
+																	</p>
+															</li>
+													</ul>
+											</div>
+										</div>
+										 <div class="team-member-dialog">
+											 <img src='images/portfolio_large/martin.JPG' />
+											 <div class='team-dialog-member-info'>
+												 <h2>
+														Martin Reyes
+												 </h2>
+												<strong>"Life is like gambling, it's not like you'll win every game, but as long as you have a chip in your hand it's not over yet…"</strong>
+														After moving alone to another city at the age of 17, which was an enriching experience, Martin started his studies in SW Engineering at the "Universidad de la República" (UDELAR) of Uruguay.</br></br>
+							He started his career in Genexus Consulting as a SQA, and despite having a great year there, he realized that Quality Assurance was not what he really wanted to do and that he needed a change of scenery.</br></br>
+							Now, less than a year away of getting his diploma, he joined a group of extraordinary people developing Software and he thinks to have found what he was looking for.
+												</div>
+														</div>
+								</li><!-- end li -->
+								<!-- Pablo Palmer -->
+									<li>
+										<div class='team-open-dialog-item'>
+
+											<img data-original="images/portfolio/pablo.jpg" src="images/portfolio/pablo.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+											<div class="over-layer"></div>
+											<div class="info-layer">
+													<ul>
+															<li>
+																	<h2>
+																			Pablo Palmer
+																	</h2>
+															</li>
+															<li>
+																	<p>
+																			Accountant
+																	</p>
+															</li>
+													</ul>
+											</div>
+										</div>
+										 <div class="team-member-dialog">
+											 <img src='images/portfolio_large/pablo.jpg' />
+											 <div class='team-dialog-member-info'>
+												 <h2>
+														Pablo Palmer
+												 </h2>
+												<strong> "Life is about everything"</strong></br>
+
+										</div>
+										</div>
+								</li><!-- end li -->
+
+								<!-- YASIM -->
+									<li>
+										<div class='team-open-dialog-item'>
+
+											<img data-original="images/portfolio/yasim.jpg" src="images/portfolio/yasim.jpg" alt="aticle-image" width="240" height="150" style="display: inline">
+											<div class="over-layer"></div>
+											<div class="info-layer">
+													<ul>
+															<li>
+																	<h2>
+																			Yasim Zeballos
+																	</h2>
+															</li>
+															<li>
+																	<p>
+																			Asociated Consultant
+																	</p>
+															</li>
+													</ul>
+											</div>
+										</div>
+										 <div class="team-member-dialog">
+											 <img src='images/portfolio_large/yasim.jpg' />
+											 <div class='team-dialog-member-info'>
+												 <h2>
+														Yasim Zeballos
+												 </h2>
+												<strong> "Life is what happens while you are busy making other plans"<br/>
+														-John Lennon- </strong></br>
+
+											</div>
+										</div>
+								</li><!-- end li -->
+			</ul>
+			</div>
+			<div class="clearfix"></div>
+
+		</section>
+		<!--RECENT WORK SECTION-->
+
 
 		<section id="fr_converse_about" class="fr_converse_gray">
 			<div class="sizers clearfix">
@@ -882,7 +841,7 @@
 
 						  </div>
 						</li>
-						
+
 						<li class="slide fr_slide_iphone">
 						  <div class="address_data">
 						  	   <div class="fr_phone">
@@ -908,7 +867,7 @@
 						      <div id="map-canvas-uy" class="map-canvas"></div> <!-- MAP -->
 						  </div>
 						</li>
-						
+
 					</ul>
 					<a id="fr_case_left" class="flex-prev" href="#"><i class="fa fa-angle-left fa-4x"></i></a>
 					<a id="fr_case_right" class="next" href="#"><i class="fa fa-angle-right fa-4x"></i></a>
@@ -957,30 +916,6 @@
 	</div> <!-- end #wrapper -->
 </div> <!-- end #container -->
 
-<!--CUSTOM JS-->
-<script type="text/javascript" src="dist/js/_bower.js"></script>
 
-<script type="text/javascript" src="dist/js/synchronit.js"></script>
-
-<script type="text/javascript" src="js/headerWithSlider.js"></script>
-<script>
-	$(document).ready(function(){
-		$('#gallery').least({
-			random: 0,
-		});
-	});
-
-	$(function() {
-    /*
-    $('.chart').easyPieChart({
-		barColor: 'rgba(255,255,255,0.8)',
-		trackColor: 'rgba(0,0,0,0.5)',
-        scaleColor: false,
-		lineWidth: 5,
-		size: 80
-    });
-	*/
-});
-    </script>
 </body>
 </html>

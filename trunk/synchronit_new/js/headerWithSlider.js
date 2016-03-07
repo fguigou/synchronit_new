@@ -1,4 +1,4 @@
-(function($){
+$(function(){
 	var $header_featured = $('#header_featured'),
 		$flexnav = $('#header_featured .flex-direction-nav');
 	
@@ -49,4 +49,4 @@
 		return false;
 	});
 		
-})(jQuery);
+});

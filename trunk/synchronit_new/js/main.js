@@ -1,5 +1,5 @@
 
-(function($){
+$(function(){
 
 	
 		
@@ -301,21 +301,7 @@
 	var secret = "19019019077658289";
 	var input = "";
 	var timer;
-	//The following function sets a timer that checks for user input. You can change the variation in how long the user has to input by changing the number in ‘setTimeout.’ In this case, it’s set for 500 milliseconds or ½ second.
-	$(document).keyup(function(e) {
-	   input += e.which;
-	   clearTimeout(timer);
-	   timer = setTimeout(function() { input = ""; }, 500);
-	   check_input();
-	});
-	//Once the time is up, this function is run to see if the user’s input is the same as the secret code
-	function check_input() {
-	    if(input == secret) {
-	        $('.fixed_mary').animate({bottom: "165px"}, 800).delay(300).animate({left: "87%"}, 500).delay(1800).animate({bottom: "-300px"}, 500);
-	        $('.fixed_thumb').css("left","84%").delay(1800).animate({bottom: "30px"}, 300).delay(1300).animate({bottom: "-300px"}, 500);
-
-	    }
-	};
+	
 	var $window=$(window);
 
 $window.disablescroll({
@@ -407,4 +393,4 @@ $window.disablescroll('undo');
 	});
 
 
-})(jQuery);
+});

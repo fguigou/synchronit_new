@@ -155,23 +155,40 @@ module.exports = function(grunt) {
 					dev : {
 						files : {
 							'dist/js/synchronit.js' : [
+									config.basePath + '/js/jquery.onscreen.min.js',
+									config.basePath + '/js/jQuery.appear.js',
+									config.basePath + '/js/jquery.flexslider-min.js',
+									//config.basePath + '/js/jquery.easing.1.3',
+									config.basePath + '/js/disableScroll.js',
 									config.basePath + '/js/dialog.jquery.js',
 									config.basePath + '/js/main.js',
+									config.basePath + '/js/map.js',
+									config.basePath + '/js/headerWithSlider.js',
 									config.basePath + '/js/tooltips.js',
-									config.basePath + '/js/dialogs.js', ]
+									config.basePath + '/js/dialogs.js',
+									config.basePath + '/js/sections/team.js']
 						}
 					},
 					bower : {
 						files : {
 							'dist/js/_bower.js' : [
+							        config.bowerRoot
+							        	+ "/jquery/dist/jquery.min.js",
 									config.bowerRoot
 											+ "/jquery-ui/ui/minified/core.min.js",
 									config.bowerRoot
 											+ "/jquery-ui/ui/minified/widget.min.js",
 									config.bowerRoot
-											+ "/tooltipster/js/jquery.tooltipster.min.js" ],
-							'dist/css/_bower.min.css' : [ config.bowerRoot
-									+ "/tooltipster/css/tooltipster.css"
+											+ "/jquery.easing/js/jquery.easing.min.js",
+									config.bowerRoot
+											+ "/tooltipster/js/jquery.tooltipster.min.js",
+												],
+							'dist/css/_bower.min.css' : [
+							      config.bowerRoot
+									+ "/tooltipster/css/tooltipster.css",
+								//	config.basePath + '/css/headerWithSlider.css',
+									config.basePath + '/css/font-awesome.min.css',
+									config.basePath + '/css/slidedeck.skin.css'
 
 							]
 						}

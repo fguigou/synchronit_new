@@ -1,1 +1,7 @@
-$(".value_description").dialog();
+/***
+ * Initialize dialogs on ready.
+ */
+$(function(){
+	$(".value_description").dialog();
+	
+});
