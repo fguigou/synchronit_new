@@ -9,12 +9,13 @@ $name = $_POST['name'];
 $email = $_POST['from'];
 $message = $_POST['message'];
 $subject =  $_POST['from'];
+$severIp='209.236.127.42';
 
 
 $mail->isSMTP();
 
 $mail->SMTPDebug = 1;// Set mailer to use SMTP
-$mail->Host = gethostbyname('mail.synchronit.com');  // Specify main and backup server
+$mail->Host = $severIp;  // Specify main and backup server
 $mail->SMTPAuth = true;    // Enable SMTP authentication
 $mail->Username = 'contact@synchronit.com';                            // SMTP username
 $mail->Password = 'Muchachit0123';                           // SMTP password
@@ -50,7 +51,7 @@ $subject =  $_POST['subject'];
 
 $mail->isSMTP();
 $mail->SMTPDebug = 1;// Set mailer to use SMTP
-$mail->Host =  gethostbyname('mail.synchronit.com'); // Specify main and backup server
+$mail->Host =  $severIp; // Specify main and backup server
 $mail->SMTPAuth = true;    // Enable SMTP authentication
 $mail->Username = 'contact@synchronit.com';                            // SMTP username
 $mail->Password = 'Muchachit0123';                           // SMTP password
