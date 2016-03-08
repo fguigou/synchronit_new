@@ -14,7 +14,7 @@ $subject =  $_POST['from'];
 $mail->isSMTP();
 
 $mail->SMTPDebug = 1;// Set mailer to use SMTP
-$mail->Host = 'mail.synchronit.com';  // Specify main and backup server
+$mail->Host = gethostbyname('mail.synchronit.com');  // Specify main and backup server
 $mail->SMTPAuth = true;    // Enable SMTP authentication
 $mail->Username = 'contact@synchronit.com';                            // SMTP username
 $mail->Password = 'Muchachit0123';                           // SMTP password
@@ -50,7 +50,7 @@ $subject =  $_POST['subject'];
 
 $mail->isSMTP();
 $mail->SMTPDebug = 1;// Set mailer to use SMTP
-$mail->Host = 'mail.synchronit.com';  // Specify main and backup server
+$mail->Host =  gethostbyname('mail.synchronit.com'); // Specify main and backup server
 $mail->SMTPAuth = true;    // Enable SMTP authentication
 $mail->Username = 'contact@synchronit.com';                            // SMTP username
 $mail->Password = 'Muchachit0123';                           // SMTP password
