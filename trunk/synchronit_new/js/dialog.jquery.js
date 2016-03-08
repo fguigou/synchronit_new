@@ -44,6 +44,7 @@
 		},
 		_showBackdrop : function(dialogZIndex) {
 			if (this.options.backdrop) {
+				var that=this;
 				var $backdrop = $("#dialog-shadow");
 				if (!$backdrop.is(':visible')) {
 					var backdropZIndex = dialogZIndex - 1;
@@ -58,6 +59,15 @@
 					}, this.options.fadeInTime, this.options.easeIn);
 
 				}
+				$backdrop.off('click');
+				$backdrop.on('click',function(){
+					that.close();
+				});
+				$(document).on('keydown',function(e){
+					if(e.keyCode===27){//esc
+						that.close();
+					}
+				})
 			}
 		},
 
@@ -65,6 +75,7 @@
 			if (this.options.beforeClose && !this.options.beforeClose()) {
 				return;
 			}
+			$(document).off('keydown');
 			var $elem = this.element;
 
 			var $dialogContainer = $elem.parents('.dialog:eq(0)');
@@ -108,7 +119,7 @@
 			$elem.wrap('<div class="contentContainer dialog-content" />');
 			$elem.append('<div class="dialog-close-button"><i class="glyphicons remove"></i></div>');
 			var $close = $container.find(".dialog-close-button");
-			
+
 			var that = this;
 			$close.off('click.dialog');
 			$close.on('click.dialog', function() {

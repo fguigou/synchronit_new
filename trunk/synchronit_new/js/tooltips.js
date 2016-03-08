@@ -1,13 +1,18 @@
 
 $(document).ready(function() {
+	$(".value-short-item").click(seeValue);
+
 	var tooltipReady=function(origin, tooltip){
-    	$(".see-more-value").click(function(e) {
-    		e.preventDefault();
-    		var id = $(this).data('valueId');
-    		$("#" + id).dialog('open');
-    		return false;
-    	});
+    	$(".see-more-value").click(seeValue);
+
     };
+	function seeValue(e){
+		console.log('show dialog');
+		e.preventDefault();
+		var id = $(this).data('valueId');
+		$("#" + id).dialog('open');
+		return false;
+	}
 	$('#you-me-we-icon').tooltipster({
 		interactive:true,
 		content: $('<p>The first pre-requisite for a successful project, is to build up a team.<br/> And this is not a one-time process. It is a permanent activity.</p>'
@@ -32,9 +37,9 @@ $(document).ready(function() {
         		+"<a href='#' class='see-more-value' data-value-id='transparency'>See more...</a>"),
         functionReady: tooltipReady
     });
-	
-	
-});    
+
+
+});
 //<div id="freedom" class="value_description value_text_block" style="display: block;">
 //<p>After more than 200 years of the French revolution that influenced so many democracies, the fundamental values that inspired it are still to be reaffirmed every day. Universal opportunity is a concept and a practice that we adhere to.</p>
 //<p>At Synchronit, we have no managers or hierarchical positions in the traditional sense.</p>

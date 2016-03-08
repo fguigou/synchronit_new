@@ -75,6 +75,7 @@
 		},
 		_showBackdrop : function(dialogZIndex) {
 			if (this.options.backdrop) {
+				var that=this;
 				var $backdrop = $("#dialog-shadow");
 				if (!$backdrop.is(':visible')) {
 					var backdropZIndex = dialogZIndex - 1;
@@ -89,6 +90,15 @@
 					}, this.options.fadeInTime, this.options.easeIn);
 
 				}
+				$backdrop.off('click');
+				$backdrop.on('click',function(){
+					that.close();
+				});
+				$(document).on('keydown',function(e){
+					if(e.keyCode===27){//esc
+						that.close();
+					}
+				})
 			}
 		},
 
@@ -96,6 +106,7 @@
 			if (this.options.beforeClose && !this.options.beforeClose()) {
 				return;
 			}
+			$(document).off('keydown');
 			var $elem = this.element;
 
 			var $dialogContainer = $elem.parents('.dialog:eq(0)');
@@ -139,7 +150,7 @@
 			$elem.wrap('<div class="contentContainer dialog-content" />');
 			$elem.append('<div class="dialog-close-button"><i class="glyphicons remove"></i></div>');
 			var $close = $container.find(".dialog-close-button");
-			
+
 			var that = this;
 			$close.off('click.dialog');
 			$close.on('click.dialog', function() {
@@ -728,14 +739,19 @@ $(function(){
 });
 
 $(document).ready(function() {
+	$(".value-short-item").click(seeValue);
+
 	var tooltipReady=function(origin, tooltip){
-    	$(".see-more-value").click(function(e) {
-    		e.preventDefault();
-    		var id = $(this).data('valueId');
-    		$("#" + id).dialog('open');
-    		return false;
-    	});
+    	$(".see-more-value").click(seeValue);
+
     };
+	function seeValue(e){
+		console.log('show dialog');
+		e.preventDefault();
+		var id = $(this).data('valueId');
+		$("#" + id).dialog('open');
+		return false;
+	}
 	$('#you-me-we-icon').tooltipster({
 		interactive:true,
 		content: $('<p>The first pre-requisite for a successful project, is to build up a team.<br/> And this is not a one-time process. It is a permanent activity.</p>'
@@ -760,9 +776,9 @@ $(document).ready(function() {
         		+"<a href='#' class='see-more-value' data-value-id='transparency'>See more...</a>"),
         functionReady: tooltipReady
     });
-	
-	
-});    
+
+
+});
 //<div id="freedom" class="value_description value_text_block" style="display: block;">
 //<p>After more than 200 years of the French revolution that influenced so many democracies, the fundamental values that inspired it are still to be reaffirmed every day. Universal opportunity is a concept and a practice that we adhere to.</p>
 //<p>At Synchronit, we have no managers or hierarchical positions in the traditional sense.</p>
@@ -783,6 +799,7 @@ $(document).ready(function() {
 //<p>In practice, this means that at Synchronit there is no profit-taken nor dividends. Each person earns purely based on the contribution done to generate value.
 //Modern companies are starting to think in this way, like Amazon for example.</p>
 //</div>
+
 /***
  * Initialize dialogs on ready.
  */

@@ -11,7 +11,7 @@ $message = $_POST['message'];
 $subject =  $_POST['from'];
 
 
-$mail->isSMTP();    
+$mail->isSMTP();
 $mail->SMTPDebug = 1;// Set mailer to use SMTP
 $mail->Host = 'smtpout.secureserver.net';  // Specify main and backup server
 $mail->SMTPAuth = true;    // Enable SMTP authentication
@@ -47,7 +47,7 @@ $message = $_POST['message'];
 $subject =  $_POST['subject'];
 
 
-$mail->isSMTP();    
+$mail->isSMTP();
 $mail->SMTPDebug = 1;// Set mailer to use SMTP
 $mail->Host = 'smtpout.secureserver.net';  // Specify main and backup server
 $mail->SMTPAuth = true;    // Enable SMTP authentication
@@ -58,7 +58,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable encryption, 'ssl
 
 $mail->From = $email;
 $mail->FromName = 'Synchronit';
-$mail->addAddress('btobler@synchronit.com');  // Add a recipient
+$mail->addAddress('mperez@synchronit.com');  // Add a recipient
 
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 $mail->isHTML(true);                                  // Set email format to HTML
